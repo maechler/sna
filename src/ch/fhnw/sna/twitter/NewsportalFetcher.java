@@ -27,7 +27,11 @@ public class NewsportalFetcher {
 
     public void fetchNewsportals(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException {
         for (String newsportal : newsportals) {
-            graph.addNewsportal(new NewsportalTwitterUser(twitter.showUser(newsportal)));
+            
+            NewsportalTwitterUser tu = new NewsportalTwitterUser(twitter.showUser(newsportal)); 
+            graph.addNewsportal(tu);
+            
+            LOG.info("Fetching newsportal "+newsportal+" ("+tu.getFollowersCount()+")");
         }
     }
 
