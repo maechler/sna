@@ -3,10 +3,12 @@ package ch.fhnw.sna.twitter;
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import twitter4j.*;
 
+import java.util.ArrayList;
+
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
 
-    public NewsportalGraph fetch() {
+    public NewsportalGraph fetch(ArrayList<String> newsportals) {
         NewsportalGraph graph = new NewsportalGraph();
 
         try {
