@@ -4,4 +4,4 @@
 .classpath
 .settings
 bin
-twitter4j.properties
+src/twitter4j.properties
