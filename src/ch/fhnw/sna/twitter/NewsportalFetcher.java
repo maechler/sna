@@ -36,17 +36,18 @@ public class NewsportalFetcher {
     }
 
     public void fetchHumans(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException {
-        /*
+
         long cursor = -1;
-        PagableResponseList<User> followers;
+        IDs ids;
         Twitter twitter = new TwitterFactory().getInstance();
         do {
-            followers = twitter.getFollowersList("tagi", cursor);
-            for (User follower : followers) {
-                // TODO: Collect top 10 followers here
-                System.out.println(follower.getName() + " has " + follower.getFollowersCount() + " follower(s)");
-            }
-        } while ((cursor = followers.getNextCursor()) != 0);
-        */
+            ids = twitter.getFollowersIDs("tagi", cursor, -1);
+
+            LOG.info("Fetched ids " + ids.getIDs().length);
+            /*for (long id : ids.getIDs()) {
+                System.out.println("fetched id count " + id);
+            }*/
+        } while ((cursor = ids.getNextCursor()) != 0);
+
     }
 }
