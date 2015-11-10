@@ -1,5 +1,6 @@
 package ch.fhnw.sna.twitter;
 
+import ch.fhnw.sna.twitter.model.HumanTwitterUser;
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import ch.fhnw.sna.twitter.model.NewsportalTwitterUser;
 import twitter4j.*;
@@ -9,11 +10,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.Objects;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
@@ -29,25 +26,71 @@ public class NewsportalFetcher {
             LOG.error("Got TwitterException while fetching: {}", e.getErrorMessage());
         }
 
-
         return graph;
     }
 
-    public void fetchNewsportals(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException {
+    private void fetchNewsportals(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException {
         for (String newsportal : newsportals) {
+            graph.addNewsportal(new NewsportalTwitterUser(twitter.showUser(newsportal)));
             
-            NewsportalTwitterUser tu = new NewsportalTwitterUser(twitter.showUser(newsportal)); 
-            graph.addNewsportal(tu);
-            
-            LOG.info("Fetching newsportal "+newsportal+" ("+tu.getFollowersCount()+")");
+            LOG.info("Fetched newsportal " + newsportal);
         }
     }
 
-    public void fetchHumans(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException, InterruptedException, IOException {
+    private void fetchHumans(ArrayList<String> newsportals, NewsportalGraph graph) throws InterruptedException, IOException {
+        int requestLimitPerMinutes = 15; //request limit per 15 minutes
+        int rowsPerRequest = 100;
+        List<String> newsportalIds;
+        long[] newsportalIdsForRequest;
 
+        for (String newsportal : newsportals) {
+            newsportalIds = readIds(newsportal);
+
+            for (int i = 0; i < newsportalIds.size();) {
+                newsportalIdsForRequest = new long[rowsPerRequest];
+
+                for (int j=0; j<rowsPerRequest && i < newsportalIds.size(); j++) {
+                    newsportalIdsForRequest[j] = Long.parseLong(newsportalIds.get(i));
+
+                    i++;
+                }
+
+                try {
+                    ResponseList<User> users = twitter.lookupUsers(newsportalIdsForRequest);
+
+                    for (User user : users) {
+                        graph.addHuman(newsportal, new HumanTwitterUser(user));
+                    }
+                } catch (TwitterException e) {
+                    LOG.info("TwitterException:  " + e.getErrorMessage());
+                    LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
+
+                    Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
+                }
+            }
+
+            LOG.info("Fetched users for newsportal " + newsportal + " (" + newsportalIds.size() + ")");
+        }
+
+        LOG.info("Fetched all users for every newsportal");
+    }
+
+    private List<String> readIds(String newsportal) throws IOException {
+        BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
+        List<String> ids = new ArrayList<>();
+
+        for (String line = in.readLine(); line != null; line = in.readLine()) {
+            ids.add(line);
+        }
+
+        in.close();
+
+        return ids;
+    }
+
+    public void fetchIds(ArrayList<String> newsportals) throws TwitterException, InterruptedException, IOException {
         for(String newsportal : newsportals)
         {
-            
             File f = new File("data/"+newsportal+".txt");
             f.createNewFile();
             
@@ -88,12 +131,10 @@ public class NewsportalFetcher {
             
             // Nach jedem Newsportal 16 Minuten warten
             LOG.info("Sleeping...");
-            Thread.sleep(16*60*1000);
-            
+            Thread.sleep(16 * 60 * 1000);
         }
-
     }
-    
+
     public void pickRandomIDs(ArrayList<String> newsportals) throws IOException
     {
         for(String newsportal : newsportals)
@@ -110,7 +151,7 @@ public class NewsportalFetcher {
             }
             bufferedReader.close();
            
-            // Zufallszahlengenerator welche 5% der Abzahl IDs in einer eindeutigen Liste zurückgibt
+            // Zufallszahlengenerator welche 5% der Abzahl IDs in einer eindeutigen Liste zurï¿½ckgibt
             Random rng = new Random(); // Ideally just create one instance globally
             Set<Integer> generated = new LinkedHashSet<Integer>();
             while (generated.size() < (lines.size()*0.05))
@@ -119,7 +160,7 @@ public class NewsportalFetcher {
                 generated.add(next);
             }
          
-            // Neue Datei mit den zufällig gewählen 5% schreiben
+            // Neue Datei mit den zufï¿½llig gewï¿½hlen 5% schreiben
             File f = new File("data/"+newsportal+"_5percent.txt");
             f.createNewFile();
             
