@@ -70,17 +70,15 @@ public class NewsportalFetcher {
                         writer.write(Objects.toString(ids.getIDs()[i])+"\r\n");
                     }
                     
+                    writer.close();
                     LOG.info(i+" ids written to /data/" + newsportal + ".txt");
-                  
-                    LOG.info("Sleeping...");
-                    Thread.sleep(65000);
-                    
                 }
                 catch(TwitterException e)
                 {
                     ids = ids2;
                     LOG.info(e.toString());
-                    Thread.sleep(60000);
+                    LOG.info("Sleeping...");
+                    Thread.sleep(16*60*1000);
                 }
                 finally
                 {
@@ -88,7 +86,9 @@ public class NewsportalFetcher {
                 }
             } while ((cursor = ids.getNextCursor()) != 0);  
             
-            
+            // Nach jedem Newsportal 16 Minuten warten
+            LOG.info("Sleeping...");
+            Thread.sleep(16*60*1000);
             
         }
 
