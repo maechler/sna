@@ -15,6 +15,7 @@ import java.util.*;
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
     private Twitter twitter = new TwitterFactory().getInstance();
+    private static final int ERROR_CODE_RATE_LIMIT_EXCEEDED = 88;
 
     public NewsportalGraph fetch(ArrayList<String> newsportals) throws InterruptedException, IOException {
         NewsportalGraph graph = new NewsportalGraph();
@@ -37,7 +38,7 @@ public class NewsportalFetcher {
         }
     }
 
-    private void fetchHumans(ArrayList<String> newsportals, NewsportalGraph graph) throws InterruptedException, IOException {
+    private void fetchHumans(ArrayList<String> newsportals, NewsportalGraph graph) throws InterruptedException, IOException, TwitterException {
         int requestLimitPerMinutes = 15; //request limit per 15 minutes
         int rowsPerRequest = 100;
         List<String> newsportalIds;
@@ -62,6 +63,8 @@ public class NewsportalFetcher {
                         graph.addHuman(newsportal, new HumanTwitterUser(user));
                     }
                 } catch (TwitterException e) {
+                    if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
+
                     LOG.info("TwitterException:  " + e.getErrorMessage());
                     LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
 
