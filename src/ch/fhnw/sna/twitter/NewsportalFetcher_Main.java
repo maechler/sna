@@ -14,7 +14,7 @@ public class NewsportalFetcher_Main {
         boolean fetchIds = false;
         
         // Newsportale
-        newsportals.add("tagi");
+        newsportals.add("tagesanzeiger");
         newsportals.add("watson_news");
         newsportals.add("Weltwoche");
         newsportals.add("blickamabend");
