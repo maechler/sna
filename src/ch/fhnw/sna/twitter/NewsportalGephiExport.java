@@ -1,12 +1,33 @@
 package ch.fhnw.sna.twitter;
 
-import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import ch.fhnw.sna.twitter.model.HumanTwitterUser;
+import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import ch.fhnw.sna.twitter.model.NewsportalTwitterUser;
 import ch.fhnw.sna.twitter.model.TwitterUser;
 
+import it.uniroma1.dis.wsngroup.gexf4j.core.Edge;
+import it.uniroma1.dis.wsngroup.gexf4j.core.EdgeType;
+import it.uniroma1.dis.wsngroup.gexf4j.core.Gexf;
+import it.uniroma1.dis.wsngroup.gexf4j.core.Graph;
+import it.uniroma1.dis.wsngroup.gexf4j.core.Mode;
+import it.uniroma1.dis.wsngroup.gexf4j.core.Node;
+import it.uniroma1.dis.wsngroup.gexf4j.core.data.Attribute;
+import it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeClass;
+import it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeList;
+import it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeType;
+import it.uniroma1.dis.wsngroup.gexf4j.core.impl.GexfImpl;
+import it.uniroma1.dis.wsngroup.gexf4j.core.impl.StaxGraphWriter;
+import it.uniroma1.dis.wsngroup.gexf4j.core.impl.data.AttributeListImpl;
 
-
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +51,8 @@ public class NewsportalGephiExport {
     AttributeList attrList = new AttributeListImpl(AttributeClass.NODE);
 
     Attribute attFollowersCount = attrList.createAttribute(AttributeType.INTEGER, "followersCount");
+    Attribute attFollowingsCount = attrList.createAttribute(AttributeType.INTEGER, "followingsCount");
+    Attribute attTweetsCount = attrList.createAttribute(AttributeType.INTEGER, "tweetsCount");
     Attribute attDescription = attrList.createAttribute(AttributeType.STRING, "description");
     Attribute attScreenName = attrList.createAttribute(AttributeType.STRING, "screenName");
     Attribute attName = attrList.createAttribute(AttributeType.STRING, "name");
@@ -83,17 +106,16 @@ public class NewsportalGephiExport {
 
 
     private Map<String, Node> createNodes(NewsportalGraph users, Graph graph) {
-        Map<String, Node> nodeMap = new HashMap<>(
-                users.getHumans().size() * 2 + 12);
+        Map<String, Node> nodeMap = new HashMap<>();
 
-        for (HumanTwitterUser user : users.getHumans()) {
-            if (!nodeMap.containsKey(user.getScreenName())) {
-                nodeMap.put(user.getScreenName(), createSingleNode(graph, user));
+        for (String screenName : users.getHumans().keySet()) {
+            if (!nodeMap.containsKey(screenName)) {
+                nodeMap.put(screenName, createSingleNode(graph, users.getHumans().get(screenName)));
             }
         }
-        for (NewsportalTwitterUser user : users.getNewsportals()) {
-            if (!nodeMap.containsKey(user.getScreenName())) {
-                nodeMap.put(user.getScreenName(), createSingleNode(graph, user));
+        for (String screenName : users.getNewsportals().keySet()) {
+            if (!nodeMap.containsKey(screenName)) {
+                nodeMap.put(screenName, createSingleNode(graph, users.getNewsportals().get(screenName)));
             }
         }
 
@@ -101,12 +123,14 @@ public class NewsportalGephiExport {
     }
 
     private Node createSingleNode(Graph graph, TwitterUser user) {
-        Node node = graph.createNode(user.getScreenName()).setLabel(user.getLabel());
-        node.getAttributeValues().addValue(attFollowersCount, user.getFollowersCount());
+        Node node = graph.createNode(user.getScreenName()).setLabel(user.getScreenName());
+        node.getAttributeValues().addValue(attFollowersCount, String.valueOf(user.getFollowersCount()));
         //if (user.getFollowersCount() != 0) {
         //    node.getAttributeValues().addValue(attFollowersCount,
         //            String.valueOf(user.getFollowersCout()));
         //}
+        node.getAttributeValues().addValue(attFollowingsCount, String.valueOf(user.getFollowingsCount()));
+        node.getAttributeValues().addValue(attTweetsCount, String.valueOf(user.getTweetsCount()));
         node.getAttributeValues().addValue(attScreenName, user.getScreenName());
         //node.getAttributeValues().addValue(attName, user.getName());
         if (user.getName().length() != 0) {
@@ -124,12 +148,12 @@ public class NewsportalGephiExport {
                     String.valueOf(user.getLang()));
         }
 
-        if (user isinstanceof HumanTwitterUser){
-            node.addValue(attType, TYPE_HUMAN);
+        if (user instanceof HumanTwitterUser){
+            node.getAttributeValues().addValue(attType, TYPE_HUMAN);
         }
 
-        if (user isinstanceof NewsportalTwitterUser){
-            node.addValue(attType, TYPE_NEWSPORTAL);
+        if (user instanceof NewsportalTwitterUser){
+            node.getAttributeValues().addValue(attType, TYPE_NEWSPORTAL);
         }
 
         return node;
