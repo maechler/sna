@@ -1,7 +1,5 @@
 package ch.fhnw.sna.twitter.model;
 
-import com.google.common.collect.Maps;
-
 import java.util.*;
 
 public class NewsportalGraph {
