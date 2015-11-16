@@ -5,7 +5,9 @@ import twitter4j.User;
 import java.util.List;
 
 public class TwitterUser {
-    protected int followersCount;
+    protected int followersCount = 0;
+    protected int followingsCount = 0;
+    protected int tweetsCount = 0;
     protected String description;
     protected String screenName;
     protected String name;
@@ -19,10 +21,21 @@ public class TwitterUser {
         name = user.getName();
         location = user.getLocation();
         lang = user.getLang();
+        tweetsCount = user.getStatusesCount();
+        followingsCount = user.getFriendsCount();
+
     }
 
     public int getFollowersCount() {
         return followersCount;
+    }
+
+    public int getFollowingsCount() {
+        return followingsCount;
+    }
+
+    public int getTweetsCount() {
+        return tweetsCount;
     }
 
     public String getDescription() {
