@@ -136,6 +136,7 @@ public class NewsportalFetcher {
             LOG.info("Sleeping...");
             Thread.sleep(16 * 60 * 1000);
         }
+        LOG.info("End");
     }
 
     public void pickRandomIDs(ArrayList<String> newsportals) throws IOException
