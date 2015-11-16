@@ -44,6 +44,7 @@ public class NewsportalGephiExport {
     private final String OUTPUT_FILE;
     private final String TYPE_HUMAN = "Human";
     private final String TYPE_NEWSPORTAL = "Newsportal";
+    private final int MIN_NEWSPORTAL_FOLLOWINGS = 2;
 
 
 
@@ -109,7 +110,7 @@ public class NewsportalGephiExport {
         Map<String, Node> nodeMap = new HashMap<>();
 
         for (String screenName : users.getHumans().keySet()) {
-            if (!nodeMap.containsKey(screenName)) {
+            if (!nodeMap.containsKey(screenName) && users.getAssociations().get(screenName).size() >= MIN_NEWSPORTAL_FOLLOWINGS) {
                 nodeMap.put(screenName, createSingleNode(graph, users.getHumans().get(screenName)));
             }
         }
