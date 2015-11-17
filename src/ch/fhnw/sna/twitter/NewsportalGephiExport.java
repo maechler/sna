@@ -174,9 +174,7 @@ public class NewsportalGephiExport {
                                     String from, String to) {
         Node source = nodeMap.get(from);
         Node target = nodeMap.get(to);
-        if (source == null || target == null)
-            throw new IllegalStateException(
-                    "Source and Target must not be null. Every node must be added to network as a node before using it as a edge.");
+        if (source == null || target == null) return;
         if (source.hasEdgeTo(to)) {
             Edge edge = getEdgeBetween(source, target);
             edge.setWeight(edge.getWeight() + 1f);
