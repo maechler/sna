@@ -11,21 +11,13 @@ import java.util.Map;
 
 public class AnalyseFollowerOverlaps {
     
-    public int[] analyseUserFollowsAll(ArrayList<String> newsportals) throws IOException
+    public int[] analyseUserOverlapsAllNewsportals(ArrayList<String> newsportals) throws IOException
     {
-        
-        //Map<String, List<String>> duplicates = new HashMap<String, List<String>>();
         
         int[] duplicates = new int[newsportals.size()+1];
         
-        
         List<String> ids = new ArrayList<>();
         for (String newsportal : newsportals) {
-            
-            //duplicates.put(newsportal, new ArrayList<>());
-            
-
-            System.out.println(newsportal);
             BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 ids.add(line);
@@ -35,20 +27,65 @@ public class AnalyseFollowerOverlaps {
             
         }
         
-        //int counter = 0;
         for(String id : ids)
         {
             int occurrences = Collections.frequency(ids, id);
-            
             duplicates[occurrences] = duplicates[occurrences]+1;
-            
-            System.out.println("ID "+id+" is following "+occurrences+" newsportals");
-            //if(occurrences==newsportals.size())
-            //{
-            //    ++counter;
-            //}
         }
-        //System.out.println(counter+" Users are following all the newsportals");
+        
+        
+        return duplicates;
+    }
+    
+    public Map<String, List<String>> analyseUserOverlapsSpecificNewsportals(String first, String last) throws IOException
+    {
+        
+        ArrayList<String> newsportals = new ArrayList<String>();
+        newsportals.add(first);
+        newsportals.add(last);
+        
+        Map<String, List<String>> duplicates = new HashMap<String, List<String>>();
+        
+        List<String> ids = new ArrayList<>();
+        for (String newsportal : newsportals) {
+            
+            duplicates.put(newsportal, new ArrayList<>());
+
+           // System.out.println(newsportal);
+            BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
+            for (String line = in.readLine(); line != null; line = in.readLine()) {
+                ids.add(line);
+                duplicates.get(newsportal).add(line);
+                
+            }
+            in.close();
+            
+        }
+        
+        duplicates.put("commonids", new ArrayList<>());
+        
+        for(String id : ids)
+        {
+            int occurrences = Collections.frequency(ids, id);
+            if(occurrences>1)
+            {
+                // Wenn die ID in beiden newsportalen vorkommen, die ID aus der Liste der beiden Listen löschen und stattdessen der gemeinsamen Liste hinzufügen
+                for (String newsportal : newsportals) {
+                    int deleteindex = duplicates.get(newsportal).indexOf(id);
+                    if(deleteindex>=0)
+                    {
+                        duplicates.get(newsportal).remove(deleteindex);
+                        System.out.println("Removed id "+id+" index on "+deleteindex+" from "+newsportal+" and added to commonids");
+                    }
+                }
+                
+                duplicates.get("commonids").add(id);
+                
+            }
+        }
+        
+        
+        // Graph
         
         
         return duplicates;

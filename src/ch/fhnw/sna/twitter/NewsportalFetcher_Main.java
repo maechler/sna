@@ -2,6 +2,8 @@ package ch.fhnw.sna.twitter;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import twitter4j.TwitterException;
@@ -15,7 +17,8 @@ public class NewsportalFetcher_Main {
         
         boolean fetchIds = false;
         boolean fetchUserinfoGenerateGraph = false;
-        boolean analyseOverlaps = true;
+        boolean analyseAllOverlaps = true;
+        boolean analyseSpecificOverlaps = false;
         
         // Newsportale
         newsportals.add("tagesanzeiger");
@@ -37,8 +40,20 @@ public class NewsportalFetcher_Main {
             new NewsportalGephiExport(FILE).export(graph);
         }
         
-        if(analyseOverlaps) {
-            System.out.println(new AnalyseFollowerOverlaps().analyseUserFollowsAll(newsportals));
+        if(analyseAllOverlaps) {
+            
+            int[] list = new AnalyseFollowerOverlaps().analyseUserOverlapsAllNewsportals(newsportals);
+            int i = 0;
+            for(int occurs : list)
+            {
+                System.out.println("Followers with connection to "+(i++)+" of "+newsportals.size()+" newsportals: "+occurs);
+            }
+        }
+        
+        if(analyseSpecificOverlaps)
+        {
+            Map<String, List<String>> blubb = new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","watson_news");
+            System.out.println(blubb);
         }
     }
 }
