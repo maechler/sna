@@ -1,0 +1,8 @@
+Followers with connection to 0 of 7 newsportals: 0
+Followers with connection to 1 of 7 newsportals: 200292
+Followers with connection to 2 of 7 newsportals: 133880
+Followers with connection to 3 of 7 newsportals: 113532
+Followers with connection to 4 of 7 newsportals: 100356
+Followers with connection to 5 of 7 newsportals: 108915
+Followers with connection to 6 of 7 newsportals: 73944
+Followers with connection to 7 of 7 newsportals: 84672

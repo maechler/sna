@@ -52,6 +52,7 @@ public class AnalyseFollowerOverlaps {
             duplicates.put(newsportal, new ArrayList<>());
 
            // System.out.println(newsportal);
+            //BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
             BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 ids.add(line);
@@ -75,7 +76,7 @@ public class AnalyseFollowerOverlaps {
                     if(deleteindex>=0)
                     {
                         duplicates.get(newsportal).remove(deleteindex);
-                        System.out.println("Removed id "+id+" index on "+deleteindex+" from "+newsportal+" and added to commonids");
+                        //System.out.println("Removed id "+id+" index on "+deleteindex+" from "+newsportal+" and added to commonids");
                     }
                 }
                 
@@ -84,6 +85,23 @@ public class AnalyseFollowerOverlaps {
             }
         }
         
+        // Statistik
+        int[] zahlen = new int[3];
+        int i = 0;
+        for (String newsportal : newsportals) {
+            zahlen[i++] = duplicates.get(newsportal).size();
+        }
+        zahlen[i++] = duplicates.get("commonids").size();
+        
+        float total = zahlen[0] + zahlen[1] + zahlen[2];
+        float ratio1 = zahlen[0]/total;
+        float ratio2 = zahlen[1]/total;
+        float ratio3 = zahlen[2]/total;
+        
+        System.out.println(first+" only followers: "+zahlen[0]+" / "+total+" = "+ratio1);
+        System.out.println(last+" only followers: "+zahlen[1]+" / "+total+" = "+ratio2);
+        System.out.println("common follower of "+first+" and "+last+": "+zahlen[2]+" / "+total+" = "+ratio3);
+        System.out.println();
         
         // Graph
         
