@@ -11,7 +11,11 @@ public class NewsportalFetcher_Main {
         String FILE = "Newsportals.gexf";
         ArrayList<String> newsportals = new ArrayList<String>();
         NewsportalFetcher newsportalFetcher = new NewsportalFetcher();
+        NewsportalGraph graph = null;
+        
         boolean fetchIds = false;
+        boolean fetchUserinfoGenerateGraph = false;
+        boolean analyseOverlaps = true;
         
         // Newsportale
         newsportals.add("tagesanzeiger");
@@ -24,12 +28,17 @@ public class NewsportalFetcher_Main {
         //newsportals.add("SRF");
 
         if (fetchIds) {
-            newsportalFetcher.fetchIds(newsportals);
-            newsportalFetcher.pickRandomIDs(newsportals);
+            newsportalFetcher.fetchNewsportalFollowerIDsToFile(newsportals);
+            newsportalFetcher.writeRandomIDsFromNewsportalFollowerIDsToFile(newsportals);
         }
 
-        NewsportalGraph graph = newsportalFetcher.fetch(newsportals);
-
-        new NewsportalGephiExport(FILE).export(graph);
+        if(fetchUserinfoGenerateGraph) {
+            graph = newsportalFetcher.fetchUserInfosToGraph(newsportals);
+            new NewsportalGephiExport(FILE).export(graph);
+        }
+        
+        if(analyseOverlaps) {
+            System.out.println(new AnalyseFollowerOverlaps().analyseUserFollowsAll(newsportals));
+        }
     }
 }
