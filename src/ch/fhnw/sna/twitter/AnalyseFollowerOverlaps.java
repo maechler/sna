@@ -52,8 +52,8 @@ public class AnalyseFollowerOverlaps {
             duplicates.put(newsportal, new ArrayList<>());
 
            // System.out.println(newsportal);
-            //BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
-            BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
+            BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
+            //BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 ids.add(line);
                 duplicates.get(newsportal).add(line);

@@ -18,7 +18,7 @@ public class NewsportalFetcher_Main {
         boolean fetchIds = false;
         boolean fetchUserinfoGenerateGraph = false;
         boolean analyseAllOverlaps = false;
-        boolean analyseSpecificOverlaps = true;
+        boolean analyseSpecificOverlaps = false;
         
         // Newsportale
         newsportals.add("tagesanzeiger");
