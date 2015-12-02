@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-12-02">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="followers" title="followers" type="integer"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="MMNT-EdgeType" title="MMNT-EdgeType" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="tagesanzeiger">
+        <attvalues>
+          <attvalue for="followers" value="76556"></attvalue>
+        </attvalues>
+        <viz:size value="119.48378"></viz:size>
+        <viz:position x="-433.0862" y="372.55847" z="0.0"></viz:position>
+        <viz:color r="241" g="246" b="190"></viz:color>
+      </node>
+      <node id="2" label="watson_news">
+        <attvalues>
+          <attvalue for="followers" value="43493"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="85.87314" y="756.2119" z="0.0"></viz:position>
+        <viz:color r="215" g="25" b="28"></viz:color>
+      </node>
+      <node id="6" label="Weltwoche">
+        <attvalues>
+          <attvalue for="followers" value="48571"></attvalue>
+        </attvalues>
+        <viz:size value="102.992424"></viz:size>
+        <viz:position x="995.91766" y="-96.11569" z="0.0"></viz:position>
+        <viz:color r="223" g="74" b="63"></viz:color>
+      </node>
+      <node id="7" label="blickamabend">
+        <attvalues>
+          <attvalue for="followers" value="115432"></attvalue>
+        </attvalues>
+        <viz:size value="142.39313"></viz:size>
+        <viz:position x="71.03489" y="-817.4512" z="0.0"></viz:position>
+        <viz:color r="185" g="211" b="188"></viz:color>
+      </node>
+      <node id="8" label="Blickch">
+        <attvalues>
+          <attvalue for="followers" value="128369"></attvalue>
+        </attvalues>
+        <viz:size value="150.0168"></viz:size>
+        <viz:position x="733.0593" y="438.6738" z="0.0"></viz:position>
+        <viz:color r="166" g="199" b="187"></viz:color>
+      </node>
+      <node id="9" label="NZZ">
+        <attvalues>
+          <attvalue for="followers" value="189989"></attvalue>
+        </attvalues>
+        <viz:size value="186.32901"></viz:size>
+        <viz:position x="732.9042" y="-635.8567" z="0.0"></viz:position>
+        <viz:color r="77" g="143" b="183"></viz:color>
+      </node>
+      <node id="10" label="20min">
+        <attvalues>
+          <attvalue for="followers" value="213188"></attvalue>
+        </attvalues>
+        <viz:size value="200.0"></viz:size>
+        <viz:position x="-549.9269" y="-346.3792" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="1" target="2" weight="0.4356627">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="6" weight="0.36484316">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="7" weight="0.4494755">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="8" weight="0.4501935">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="9" weight="0.4371715">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1" target="10" weight="0.3498043">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="6" weight="0.3685125">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="7" weight="0.31357324">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="8" weight="0.29364598">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="9" weight="0.25253555">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2" target="10" weight="0.21828821">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="6" target="7" weight="0.3348455">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="6" target="8" weight="0.3170489">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="6" target="9" weight="0.272898">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="6" target="10" weight="0.22787547">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="7" target="8" weight="0.6474801">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="7" target="9" weight="0.4402902">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="7" target="10" weight="0.5018502">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="9" weight="0.48528692">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="8" target="10" weight="0.5773653">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="9" target="10" weight="0.46413592">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

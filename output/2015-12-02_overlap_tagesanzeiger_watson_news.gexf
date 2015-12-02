@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-12-02">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="followers" title="followers" type="integer"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="MMNT-EdgeType" title="MMNT-EdgeType" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="tagesanzeiger">
+        <attvalues>
+          <attvalue for="followers" value="1000"></attvalue>
+        </attvalues>
+        <viz:size value="86.13168"></viz:size>
+        <viz:position x="-141.10739" y="-418.78317" z="0.0"></viz:position>
+        <viz:color r="251" g="252" b="190"></viz:color>
+      </node>
+      <node id="2" label="watson_news">
+        <attvalues>
+          <attvalue for="followers" value="1000"></attvalue>
+        </attvalues>
+        <viz:size value="86.13168"></viz:size>
+        <viz:position x="150.2758" y="-413.28397" z="0.0"></viz:position>
+        <viz:color r="251" g="252" b="190"></viz:color>
+      </node>
+      <node id="3" label="common">
+        <attvalues>
+          <attvalue for="followers" value="122"></attvalue>
+        </attvalues>
+        <viz:size value="50.0"></viz:size>
+        <viz:position x="13.6525955" y="-3.6887398" z="0.0"></viz:position>
+        <viz:color r="215" g="25" b="28"></viz:color>
+      </node>
+      <node id="4" label="tagesanzeiger_followers">
+        <attvalues>
+          <attvalue for="followers" value="3767"></attvalue>
+        </attvalues>
+        <viz:size value="200.0"></viz:size>
+        <viz:position x="-486.15375" y="2.3979104" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="5" label="watson_news_followers">
+        <attvalues>
+          <attvalue for="followers" value="2114"></attvalue>
+        </attvalues>
+        <viz:size value="131.97531"></viz:size>
+        <viz:position x="447.7975" y="-5.544136" z="0.0"></viz:position>
+        <viz:color r="168" g="200" b="187"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="3" source="3" target="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4" source="3" target="2">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1" source="4" target="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2" source="5" target="2">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
