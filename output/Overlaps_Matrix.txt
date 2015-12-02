@@ -1,0 +1,84 @@
+tagesanzeiger only followers: 50404 / 120047.0 = 0.4198689
+watson_news only followers: 17343 / 120047.0 = 0.14446841
+common follower of tagesanzeiger and watson_news: 52300 / 120047.0 = 0.4356627
+
+tagesanzeiger only followers: 53729 / 125125.0 = 0.4294026
+Weltwoche only followers: 25745 / 125125.0 = 0.20575425
+common follower of tagesanzeiger and Weltwoche: 45651 / 125125.0 = 0.36484316
+
+tagesanzeiger only followers: 33410 / 191986.0 = 0.1740231
+blickamabend only followers: 72283 / 191986.0 = 0.3765014
+common follower of tagesanzeiger and blickamabend: 86293 / 191986.0 = 0.4494755
+
+tagesanzeiger only followers: 30427 / 204923.0 = 0.14848016
+Blickch only followers: 82241 / 204923.0 = 0.40132636
+common follower of tagesanzeiger and Blickch: 92255 / 204923.0 = 0.4501935
+
+tagesanzeiger only followers: 18292 / 266543.0 = 0.06862683
+NZZ only followers: 131726 / 266543.0 = 0.4942017
+common follower of tagesanzeiger and NZZ: 116525 / 266543.0 = 0.4371715
+
+tagesanzeiger only followers: 25878 / 289742.0 = 0.08931394
+20min only followers: 162511 / 289742.0 = 0.56088173
+common follower of tagesanzeiger and 20min: 101353 / 289742.0 = 0.3498043
+
+watson_news only followers: 26529 / 92062.0 = 0.2881645
+Weltwoche only followers: 31607 / 92062.0 = 0.343323
+common follower of watson_news and Weltwoche: 33926 / 92062.0 = 0.3685125
+
+watson_news only followers: 18577 / 158923.0 = 0.11689309
+blickamabend only followers: 90512 / 158923.0 = 0.56953365
+common follower of watson_news and blickamabend: 49834 / 158923.0 = 0.31357324
+
+watson_news only followers: 18259 / 171860.0 = 0.106243454
+Blickch only followers: 103135 / 171860.0 = 0.60011053
+common follower of watson_news and Blickch: 50466 / 171860.0 = 0.29364598
+
+watson_news only followers: 14011 / 233480.0 = 0.060009424
+NZZ only followers: 160507 / 233480.0 = 0.687455
+common follower of watson_news and NZZ: 58962 / 233480.0 = 0.25253555
+
+watson_news only followers: 15477 / 256679.0 = 0.0602971
+20min only followers: 185172 / 256679.0 = 0.7214147
+common follower of watson_news and 20min: 56030 / 256679.0 = 0.21828821
+
+Weltwoche only followers: 21114 / 164001.0 = 0.12874311
+blickamabend only followers: 87972 / 164001.0 = 0.53641135
+common follower of Weltwoche and blickamabend: 54915 / 164001.0 = 0.3348455
+
+Weltwoche only followers: 20521 / 176938.0 = 0.11597848
+Blickch only followers: 100319 / 176938.0 = 0.5669726
+common follower of Weltwoche and Blickch: 56098 / 176938.0 = 0.3170489
+
+Weltwoche only followers: 16019 / 238558.0 = 0.06714929
+NZZ only followers: 157437 / 238558.0 = 0.6599527
+common follower of Weltwoche and NZZ: 65102 / 238558.0 = 0.272898
+
+Weltwoche only followers: 18746 / 261757.0 = 0.07161604
+20min only followers: 183363 / 261757.0 = 0.7005085
+common follower of Weltwoche and 20min: 59648 / 261757.0 = 0.22787547
+
+blickamabend only followers: 36502 / 243799.0 = 0.1497217
+Blickch only followers: 49442 / 243799.0 = 0.2027982
+common follower of blickamabend and Blickch: 157855 / 243799.0 = 0.6474801
+
+blickamabend only followers: 48193 / 305419.0 = 0.15779306
+NZZ only followers: 122753 / 305419.0 = 0.4019167
+common follower of blickamabend and NZZ: 134473 / 305419.0 = 0.4402902
+
+blickamabend only followers: 32971 / 328618.0 = 0.1003323
+20min only followers: 130730 / 328618.0 = 0.39781752
+common follower of blickamabend and 20min: 164917 / 328618.0 = 0.5018502
+
+Blickch only followers: 51121 / 318356.0 = 0.1605781
+NZZ only followers: 112741 / 318356.0 = 0.354135
+common follower of Blickch and NZZ: 154494 / 318356.0 = 0.48528692
+
+Blickch only followers: 29767 / 341555.0 = 0.08715141
+20min only followers: 114586 / 341555.0 = 0.3354833
+common follower of Blickch and 20min: 197202 / 341555.0 = 0.5773653
+
+NZZ only followers: 96424 / 403175.0 = 0.23916166
+20min only followers: 119623 / 403175.0 = 0.2967024
+common follower of NZZ and 20min: 187128 / 403175.0 = 0.46413592
+
