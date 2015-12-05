@@ -1,8 +1,6 @@
 package ch.fhnw.sna.twitter;
 
-import ch.fhnw.sna.twitter.model.HumanTwitterUser;
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
-import ch.fhnw.sna.twitter.model.NewsportalTwitterUser;
 import ch.fhnw.sna.twitter.model.TwitterUser;
 
 import it.uniroma1.dis.wsngroup.gexf4j.core.Edge;
@@ -35,21 +33,14 @@ import org.slf4j.LoggerFactory;
  * Exports the newsportal graph to Gephi
  *
  */
-
 public class NewsportalGephiExport {
     private static final Logger LOG = LoggerFactory.getLogger(NewsportalGephiExport.class);
     private static final String OUTPUT_FOLDER = "output/";
-
     private final String OUTPUT_FILE;
-    private final String TYPE_HUMAN = "Human";
-    private final String TYPE_NEWSPORTAL = "Newsportal";
     private final int MIN_NEWSPORTAL_FOLLOWINGS = 2;
-
-
 
     // Node attributes
     AttributeList attrList = new AttributeListImpl(AttributeClass.NODE);
-
     Attribute attFollowersCount = attrList.createAttribute(AttributeType.INTEGER, "followersCount");
     Attribute attFollowingsCount = attrList.createAttribute(AttributeType.INTEGER, "followingsCount");
     Attribute attTweetsCount = attrList.createAttribute(AttributeType.INTEGER, "tweetsCount");
@@ -60,17 +51,9 @@ public class NewsportalGephiExport {
     Attribute attLang = attrList.createAttribute(AttributeType.STRING, "lang");
     Attribute attType = attrList.createAttribute(AttributeType.STRING, "type");
 
-    protected String outputFile;
-
     public NewsportalGephiExport(String outputFile) {
         this.OUTPUT_FILE = outputFile;
     }
-
-    //protected String file;
-
-    //public NewsportalGephiExport(String file) {
-    //    this.file = file;
-    //}
 
     public void export(NewsportalGraph newsGraph) {
         Gexf gexf = initializeGexf();
@@ -80,9 +63,6 @@ public class NewsportalGephiExport {
         writeGraphToFile(gexf);
         LOG.info("Finished Gephi export");
     }
-
-    //public void export(NewsportalGraph graph) {
-    //}
 
     private void writeGraphToFile(Gexf gexf) {
         StaxGraphWriter graphWriter = new StaxGraphWriter();
@@ -99,23 +79,23 @@ public class NewsportalGephiExport {
 
     private void createGraph(Graph graph, NewsportalGraph newsGraph) {
         LOG.info("Creating nodes");
-        Map<String, Node> nodeMap = createNodes(newsGraph, graph);
+        Map<Long, Node> nodeMap = createNodes(newsGraph, graph);
         LOG.info("Creating edges");
         createEdges(newsGraph, graph, nodeMap);
     }
 
 
-    private Map<String, Node> createNodes(NewsportalGraph users, Graph graph) {
-        Map<String, Node> nodeMap = new HashMap<>();
+    private Map<Long, Node> createNodes(NewsportalGraph users, Graph graph) {
+        Map<Long, Node> nodeMap = new HashMap<>();
 
-        for (String screenName : users.getHumans().keySet()) {
-            if (!nodeMap.containsKey(screenName) && users.getAssociations().get(screenName).size() >= MIN_NEWSPORTAL_FOLLOWINGS) {
-                nodeMap.put(screenName, createSingleNode(graph, users.getHumans().get(screenName)));
+        for (Long id : users.getHumans().keySet()) {
+            if (!nodeMap.containsKey(id) && users.getAssociations().get(id).size() >= MIN_NEWSPORTAL_FOLLOWINGS) {
+                nodeMap.put(id, createSingleNode(graph, users.getHumans().get(id)));
             }
         }
-        for (String screenName : users.getNewsportals().keySet()) {
-            if (!nodeMap.containsKey(screenName)) {
-                nodeMap.put(screenName, createSingleNode(graph, users.getNewsportals().get(screenName)));
+        for (Long id : users.getNewsportals().keySet()) {
+            if (!nodeMap.containsKey(id)) {
+                nodeMap.put(id, createSingleNode(graph, users.getNewsportals().get(id)));
             }
         }
 
@@ -124,68 +104,43 @@ public class NewsportalGephiExport {
 
     private Node createSingleNode(Graph graph, TwitterUser user) {
         Node node = graph.createNode(user.getScreenName()).setLabel(user.getScreenName());
+
         node.getAttributeValues().addValue(attFollowersCount, String.valueOf(user.getFollowersCount()));
-        //if (user.getFollowersCount() != 0) {
-        //    node.getAttributeValues().addValue(attFollowersCount,
-        //            String.valueOf(user.getFollowersCout()));
-        //}
         node.getAttributeValues().addValue(attFollowingsCount, String.valueOf(user.getFollowingsCount()));
         node.getAttributeValues().addValue(attTweetsCount, String.valueOf(user.getTweetsCount()));
         node.getAttributeValues().addValue(attScreenName, user.getScreenName());
-        //node.getAttributeValues().addValue(attName, user.getName());
+        node.getAttributeValues().addValue(attType, user.getType());
+
         if (user.getName().length() != 0) {
             node.getAttributeValues().addValue(attName,
                     String.valueOf(user.getName()));
         }
-        //node.getAttributeValues().addValue(attLocation, user.getLocation());
         if (user.getLocation().length() != 0) {
             node.getAttributeValues().addValue(attLocation,
                     String.valueOf(user.getLocation()));
         }
-        //node.getAttributeValues().addValue(attLang, user.getLang());
         if (user.getLang().length() != 0) {
             node.getAttributeValues().addValue(attLang,
                     String.valueOf(user.getLang()));
         }
 
-        if (user instanceof HumanTwitterUser){
-            node.getAttributeValues().addValue(attType, TYPE_HUMAN);
-        }
-
-        if (user instanceof NewsportalTwitterUser){
-            node.getAttributeValues().addValue(attType, TYPE_NEWSPORTAL);
-        }
-
         return node;
     }
 
-    private void createEdges(NewsportalGraph newsportalGraph, Graph graph,
-                             Map<String, Node> nodeMap) {
-        for (Map.Entry<String, Set<String>> from : newsportalGraph.getAssociations()
-                .entrySet()) {
-            for (String to : from.getValue()) {
+    private void createEdges(NewsportalGraph newsportalGraph, Graph graph, Map<Long, Node> nodeMap) {
+        for (Map.Entry<Long, Set<Long>> from : newsportalGraph.getAssociations().entrySet()) {
+            for (Long to : from.getValue()) {
                 createOrUpdateEdge(graph, nodeMap, from.getKey(), to);
             }
         }
     }
 
-    private void createOrUpdateEdge(Graph graph, Map<String, Node> nodeMap,
-                                    String from, String to) {
+    private void createOrUpdateEdge(Graph graph, Map<Long, Node> nodeMap, Long from, Long to) {
         Node source = nodeMap.get(from);
         Node target = nodeMap.get(to);
         if (source == null || target == null) return;
-        if (source.hasEdgeTo(to)) {
-            Edge edge = getEdgeBetween(source, target);
-            edge.setWeight(edge.getWeight() + 1f);
 
-        } else if (target.hasEdgeTo(from)) {
-            Edge edge = getEdgeBetween(target, source);
-            edge.setWeight(edge.getWeight() + 1f);
-
-        } else {
-            source.connectTo(target).setWeight(1f);
-        }
-
+        source.connectTo(target).setWeight(1f);
     }
 
     private Edge getEdgeBetween(Node source, Node target) {
@@ -199,14 +154,15 @@ public class NewsportalGephiExport {
 
     private Gexf initializeGexf() {
         Gexf gexf = new GexfImpl();
-        gexf.getMetadata().setLastModified(Calendar.getInstance().getTime())
-                .setCreator("SNA Newsportal Graph");
+        Graph graph = gexf.getGraph();
+
+        gexf.getMetadata().setLastModified(Calendar.getInstance().getTime()).setCreator("SNA Newsportal Graph");
         gexf.setVisualization(true);
 
-        Graph graph = gexf.getGraph();
         graph.setDefaultEdgeType(EdgeType.DIRECTED);
         graph.setMode(Mode.STATIC);
         graph.getAttributeLists().add(attrList);
+
         return gexf;
     }
 }

@@ -1,8 +1,9 @@
 package ch.fhnw.sna.twitter;
 
-import ch.fhnw.sna.twitter.model.HumanTwitterUser;
+import ch.fhnw.sna.twitter.database.DatabaseAccess;
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
-import ch.fhnw.sna.twitter.model.NewsportalTwitterUser;
+import ch.fhnw.sna.twitter.model.TwitterUser;
+import com.almworks.sqlite4java.SQLiteException;
 import twitter4j.*;
 
 import java.io.BufferedReader;
@@ -10,12 +11,136 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
     private Twitter twitter = new TwitterFactory().getInstance();
     private static final int ERROR_CODE_RATE_LIMIT_EXCEEDED = 88;
+    private DatabaseAccess db;
+
+    public NewsportalFetcher(DatabaseAccess db) {
+        this.db = db;
+    }
+
+    public void fetchHumanFollowers() throws TwitterException, SQLiteException, InterruptedException {
+        List<Long> nodeIds = db.findAllNodeIds();
+        int requestLimitPerMinutes = 15; //request limit per 15 minutes
+        long cursor =-1L;
+        IDs ids;
+        double total = nodeIds.size();
+        double current = 0;
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        for (Long id : nodeIds) {
+            current++;
+            if (db.countEdgesFrom(id) < 2) continue;
+
+            TwitterUser node = db.findNodeById(id);
+
+            if (!node.getLoadedFollowers()) {
+                try {
+                    do {
+                        ids = twitter.getFollowersIDs(cursor);
+
+                        for (long toId : ids.getIDs()) {
+                            if (nodeIds.contains(toId)) {
+                                db.saveEdge(node.getId(), toId);
+                                LOG.info("found friends, ooh!");
+                            }
+                        }
+                    } while((cursor = ids.getNextCursor())!=0 );
+                } catch (TwitterException e) {
+                    if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
+
+                    LOG.info("TwitterException:  " + e.getErrorMessage());
+                    LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
+                    LOG.info("Followers loaded to " + df.format(current / total) + "%");
+
+                    Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
+                }
+
+                node.setLoadedFollowers(true);
+                db.saveNode(node);
+            }
+        }
+    }
+
+    public void fetchNewsportals(ArrayList<String> newsportals) throws TwitterException, SQLiteException {
+        for (String newsportal : newsportals) {
+            db.saveNode(new TwitterUser(twitter.showUser(newsportal), TwitterUser.TYPE_NEWSPORTAL));
+            
+            LOG.info("Fetched newsportal " + newsportal);
+        }
+    }
+
+    public void fetchHumans(ArrayList<String> newsportals) throws InterruptedException, IOException, TwitterException, SQLiteException {
+        int requestLimitPerMinutes = 15; //request limit per 15 minutes
+        int rowsPerRequest = 100;
+        List<String> newsportalIds;
+        long[] newsportalIdsForRequest;
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        for (String newsportal : newsportals) {
+            newsportalIds = readIds(newsportal);
+            TwitterUser newsportalObject = db.findNodeByScreenName(newsportal);
+
+            if (newsportalObject.getLoadedFollowers()) {
+                LOG.info("Users already fetched for newsportal " + newsportal);
+
+                continue;
+            }
+
+            for (int i = 0; i < newsportalIds.size();) {
+                newsportalIdsForRequest = new long[rowsPerRequest];
+
+                for (int j=0; j<rowsPerRequest && i < newsportalIds.size(); j++) {
+                    newsportalIdsForRequest[j] = Long.parseLong(newsportalIds.get(i));
+
+                    i++;
+                }
+
+                try {
+                    ResponseList<User> users = twitter.lookupUsers(newsportalIdsForRequest);
+
+                    for (User user : users) {
+                        TwitterUser twitterUser = new TwitterUser(user, TwitterUser.TYPE_HUMAN);
+                        db.saveNode(twitterUser);
+                        db.saveEdge(twitterUser.getId(), newsportalObject.getId());
+                    }
+                } catch (TwitterException e) {
+                    if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
+
+                    LOG.info("TwitterException:  " + e.getErrorMessage());
+                    LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
+                    LOG.info("Followers for " + newsportalObject.getScreenName() +" loaded to " + df.format(((double) i) / ((double) newsportalIds.size())) + "%");
+
+                    Thread.sleep((requestLimitPerMinutes + 1) * 60 * 1000);
+                }
+            }
+
+            newsportalObject.setLoadedFollowers(true);
+            db.saveNode(newsportalObject);
+
+            LOG.info("Fetched users for newsportal " + newsportalObject.getScreenName() + " (" + newsportalIds.size() + ")");
+        }
+
+        LOG.info("Fetched all users for every newsportal");
+    }
+
+    private List<String> readIds(String newsportal) throws IOException {
+        BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
+        List<String> ids = new ArrayList<>();
+
+        for (String line = in.readLine(); line != null; line = in.readLine()) {
+            ids.add(line);
+        }
+
+        in.close();
+
+        return ids;
+    }
 
     public void fetchNewsportalFollowerIDsToFile(ArrayList<String> newsportals) throws TwitterException, InterruptedException, IOException {
         for(String newsportal : newsportals)
