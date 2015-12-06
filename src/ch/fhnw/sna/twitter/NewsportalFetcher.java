@@ -250,7 +250,7 @@ public class NewsportalFetcher {
 
     private void fetchNewsportalInfoToGraph(ArrayList<String> newsportals, NewsportalGraph graph) throws TwitterException {
         for (String newsportal : newsportals) {
-            graph.addNewsportal(new NewsportalTwitterUser(twitter.showUser(newsportal)));
+            graph.addNode(new TwitterUser(twitter.showUser(newsportal), TwitterUser.TYPE_NEWSPORTAL));
             
             LOG.info("Fetched newsportal " + newsportal);
         }
@@ -278,7 +278,7 @@ public class NewsportalFetcher {
                     ResponseList<User> users = twitter.lookupUsers(newsportalIdsForRequest);
 
                     for (User user : users) {
-                        graph.addHuman(newsportal, new HumanTwitterUser(user));
+                        graph.addNode(new TwitterUser(user, TwitterUser.TYPE_HUMAN));
                     }
                 } catch (TwitterException e) {
                     if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
@@ -294,18 +294,5 @@ public class NewsportalFetcher {
         }
 
         LOG.info("Fetched all users for every newsportal");
-    }
-
-    private List<String> readIds(String newsportal) throws IOException {
-        BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
-        List<String> ids = new ArrayList<>();
-
-        for (String line = in.readLine(); line != null; line = in.readLine()) {
-            ids.add(line);
-        }
-
-        in.close();
-
-        return ids;
     }
 }

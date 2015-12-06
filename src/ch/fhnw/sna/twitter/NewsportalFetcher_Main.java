@@ -66,8 +66,8 @@ public class NewsportalFetcher_Main {
         DatabaseAccess db = new DatabaseAccess();
         NewsportalFetcher newsportalFetcher = new NewsportalFetcher(db);
 
-        newsportalFetcher.fetchIds(newsportals);
-        newsportalFetcher.pickRandomIDs(newsportals);
+        newsportalFetcher.fetchNewsportalFollowerIDsToFile(newsportals);
+        newsportalFetcher.writeRandomIDsFromNewsportalFollowerIDsToFile(newsportals);
 
         db.close();
 
