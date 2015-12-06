@@ -31,35 +31,40 @@ public class NewsportalFetcher {
         IDs ids;
         double total = nodeIds.size();
         double current = 0;
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("#0.00");
 
         for (Long id : nodeIds) {
             current++;
             if (db.countEdgesFrom(id) < 2) continue;
 
             TwitterUser node = db.findNodeById(id);
+            cursor =-1L;
+            ids = null;
 
             if (!node.getLoadedFollowers()) {
-                try {
                     do {
-                        ids = twitter.getFollowersIDs(cursor);
+                        try {
+                            ids = twitter.getFollowersIDs(cursor);
 
-                        for (long toId : ids.getIDs()) {
-                            if (nodeIds.contains(toId)) {
-                                db.saveEdge(node.getId(), toId);
-                                LOG.info("found friends, ooh!");
+                        } catch (TwitterException e) {
+                            if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
+
+                            LOG.info("TwitterException:  " + e.getErrorMessage());
+                            LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
+                            LOG.info("Followers loaded to " + df.format((current / total)*100) + "%");
+
+                            Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
+                        }
+
+                        if (ids != null) {
+                            for (long toId : ids.getIDs()) {
+                                if (nodeIds.contains(toId)) {
+                                    db.saveEdge(node.getId(), toId);
+                                    LOG.info("found friends, ooh!");
+                                }
                             }
                         }
-                    } while((cursor = ids.getNextCursor())!=0 );
-                } catch (TwitterException e) {
-                    if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
-
-                    LOG.info("TwitterException:  " + e.getErrorMessage());
-                    LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
-                    LOG.info("Followers loaded to " + df.format(current / total) + "%");
-
-                    Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
-                }
+                    } while(ids == null || (cursor = ids.getNextCursor())!=0 );
 
                 node.setLoadedFollowers(true);
                 db.saveNode(node);
@@ -114,7 +119,7 @@ public class NewsportalFetcher {
 
                     LOG.info("TwitterException:  " + e.getErrorMessage());
                     LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
-                    LOG.info("Followers for " + newsportalObject.getScreenName() +" loaded to " + df.format(((double) i) / ((double) newsportalIds.size())) + "%");
+                    LOG.info("Followers for " + newsportalObject.getScreenName() +" loaded to " + df.format((((double) i) / ((double) newsportalIds.size()))*100) + "%");
 
                     Thread.sleep((requestLimitPerMinutes + 1) * 60 * 1000);
                 }
