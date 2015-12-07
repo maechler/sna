@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-12-07">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" title="followersCount" type="integer"></attribute>
+      <attribute id="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" title="followingsCount" type="integer"></attribute>
+      <attribute id="5b42f5cf-7122-42b2-9b20-f37080cc4e02" title="tweetsCount" type="integer"></attribute>
+      <attribute id="6523f2f1-35bd-4a94-aa43-815d3f3ff5a4" title="description" type="string"></attribute>
+      <attribute id="3f2236a8-b276-4f59-8916-126c537e1ecf" title="screenName" type="string"></attribute>
+      <attribute id="71be0d5d-0911-4ca0-b151-d22293df2ba8" title="name" type="string"></attribute>
+      <attribute id="2d549d46-6773-4515-a0f7-2c7c2bab6a89" title="location" type="string"></attribute>
+      <attribute id="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" title="lang" type="string"></attribute>
+      <attribute id="c6d55404-caab-4d1a-b7e5-9daf09455c00" title="type" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="Wernerschepper" label="Wernerschepper">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="4191"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="1080"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="2997"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="Wernerschepper"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Werner De Schepper"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Bern Olten Zürich "></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.934345"></viz:size>
+        <viz:position x="71.6264" y="359.8733" z="0.0"></viz:position>
+        <viz:color r="215" g="29" b="31"></viz:color>
+      </node>
+      <node id="ExCR_Sieber" label="ExCR_Sieber">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="3192"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="846"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="6434"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="ExCR_Sieber"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="David Sieber"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.467407"></viz:size>
+        <viz:position x="1265.2771" y="-536.38934" z="0.0"></viz:position>
+        <viz:color r="215" g="27" b="29"></viz:color>
+      </node>
+      <node id="redder66" label="redder66">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="3035"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="1737"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="7446"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="redder66"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="reda el arbi"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zurich"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="en"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.394024"></viz:size>
+        <viz:position x="-241.29962" y="-1160.3359" z="0.0"></viz:position>
+        <viz:color r="215" g="26" b="29"></viz:color>
+      </node>
+      <node id="Swiss_Pavilion" label="Swiss_Pavilion">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="3330"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="706"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="3323"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="Swiss_Pavilion"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Swiss Pavilion"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Expo Milano 2015"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="fr"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.531906"></viz:size>
+        <viz:position x="-62.459442" y="-712.5073" z="0.0"></viz:position>
+        <viz:color r="215" g="27" b="29"></viz:color>
+      </node>
+      <node id="pixelfreund" label="pixelfreund">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="4876"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="1683"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="16624"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="pixelfreund"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Ralph Hutter"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Staffelegg"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="51.254517"></viz:size>
+        <viz:position x="-99.20328" y="-239.88052" z="0.0"></viz:position>
+        <viz:color r="216" g="30" b="32"></viz:color>
+      </node>
+      <node id="AndreaJerger" label="AndreaJerger">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="2736"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2602"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="33449"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="AndreaJerger"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="AndreaJerger"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Wetzikon, Schweiz"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.25427"></viz:size>
+        <viz:position x="256.07922" y="532.7452" z="0.0"></viz:position>
+        <viz:color r="215" g="26" b="28"></viz:color>
+      </node>
+      <node id="pellissier" label="pellissier">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="2457"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2515"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="6717"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="pellissier"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="vincent pellissier"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Sion, Switzerland"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="fr"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.123863"></viz:size>
+        <viz:position x="-1508.8737" y="-342.8085" z="0.0"></viz:position>
+        <viz:color r="215" g="25" b="28"></viz:color>
+      </node>
+      <node id="Neue_LZ" label="Neue_LZ">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="3413"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="888"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="8606"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="Neue_LZ"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="luzernerzeitung.ch"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Luzern"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.5707"></viz:size>
+        <viz:position x="-1715.3663" y="373.31854" z="0.0"></viz:position>
+        <viz:color r="215" g="27" b="29"></viz:color>
+      </node>
+      <node id="_freestayhotels" label="_freestayhotels">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="35656"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="6708"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="1129"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="_freestayhotels"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Freestayhotels"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="en"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="65.64126"></viz:size>
+        <viz:position x="-749.55963" y="714.1793" z="0.0"></viz:position>
+        <viz:color r="227" g="96" b="78"></viz:color>
+      </node>
+      <node id="queer_de" label="queer_de">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="9646"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2164"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="12191"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="queer_de"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="queer.de"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Köln"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="en"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="53.48404"></viz:size>
+        <viz:position x="330.31128" y="-226.90262" z="0.0"></viz:position>
+        <viz:color r="217" g="41" b="39"></viz:color>
+      </node>
+      <node id="ChristaMarkwald" label="ChristaMarkwald">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="9886"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2653"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="641"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="ChristaMarkwald"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Christa Markwalder"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Burgdorf, Bern"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="53.59622"></viz:size>
+        <viz:position x="-979.35815" y="-255.36005" z="0.0"></viz:position>
+        <viz:color r="217" g="41" b="39"></viz:color>
+      </node>
+      <node id="PLR_Suisse" label="PLR_Suisse">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="2192"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="828"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="3348"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="PLR_Suisse"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="PLR Suisse"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Berne"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="fr"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="50.0"></viz:size>
+        <viz:position x="908.52313" y="-413.64886" z="0.0"></viz:position>
+        <viz:color r="215" g="25" b="28"></viz:color>
+      </node>
+      <node id="ABSyst" label="ABSyst">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="56562"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2835"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="6486"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="ABSyst"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="AB System"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="75.412834"></viz:size>
+        <viz:position x="-100.021774" y="178.87704" z="0.0"></viz:position>
+        <viz:color r="235" g="141" b="110"></viz:color>
+      </node>
+      <node id="MihajloHarmonik" label="MihajloHarmonik">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="4409"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="2365"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="4"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="MihajloHarmonik"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Mihajlo_Accordionist"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Schweiz"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Human"></attvalue>
+        </attvalues>
+        <viz:size value="51.03624"></viz:size>
+        <viz:position x="491.72052" y="760.8401" z="0.0"></viz:position>
+        <viz:color r="215" g="29" b="31"></viz:color>
+      </node>
+      <node id="Blickch" label="Blickch">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="130138"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="905"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="25497"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="Blickch"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Blick"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zürich"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="109.80266"></viz:size>
+        <viz:position x="1280.5219" y="20.467262" z="0.0"></viz:position>
+        <viz:color r="213" g="229" b="189"></viz:color>
+      </node>
+      <node id="tagesanzeiger" label="tagesanzeiger">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="76673"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="727"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="18327"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="tagesanzeiger"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Tages-Anzeiger"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zürich"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="84.81283"></viz:size>
+        <viz:position x="1207.823" y="-1034.9999" z="0.0"></viz:position>
+        <viz:color r="242" g="185" b="141"></viz:color>
+      </node>
+      <node id="blickamabend" label="blickamabend">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="116827"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="3509"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="28004"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="blickamabend"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Blick am Abend"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Switzerland"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="103.581024"></viz:size>
+        <viz:position x="-550.60693" y="910.15704" z="0.0"></viz:position>
+        <viz:color r="239" g="245" b="190"></viz:color>
+      </node>
+      <node id="watson_news" label="watson_news">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="44293"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="3671"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="22303"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="watson_news"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="watson"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zürich"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="69.67824"></viz:size>
+        <viz:position x="-1811.7153" y="-152.96457" z="0.0"></viz:position>
+        <viz:color r="230" g="115" b="92"></viz:color>
+      </node>
+      <node id="20min" label="20min">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="216139"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="370"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="42578"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="20min"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="20 Minuten"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Switzerland"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="150.0"></viz:size>
+        <viz:position x="1238.9515" y="875.6596" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="Weltwoche" label="Weltwoche">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="49473"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="1276"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="2025"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="Weltwoche"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Die Weltwoche"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zürich, Schweiz"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="72.099396"></viz:size>
+        <viz:position x="-1560.1411" y="756.43066" z="0.0"></viz:position>
+        <viz:color r="232" g="126" b="100"></viz:color>
+      </node>
+      <node id="NZZ" label="NZZ">
+        <attvalues>
+          <attvalue for="4f05f68c-a2cd-4d4f-94f6-7c97cbc28628" value="192306"></attvalue>
+          <attvalue for="06f9c5b6-f8d9-44ea-880c-9f318bbf4983" value="4268"></attvalue>
+          <attvalue for="5b42f5cf-7122-42b2-9b20-f37080cc4e02" value="42213"></attvalue>
+          <attvalue for="3f2236a8-b276-4f59-8916-126c537e1ecf" value="NZZ"></attvalue>
+          <attvalue for="71be0d5d-0911-4ca0-b151-d22293df2ba8" value="Neue Zürcher Zeitung"></attvalue>
+          <attvalue for="2d549d46-6773-4515-a0f7-2c7c2bab6a89" value="Zürich"></attvalue>
+          <attvalue for="b5c4e931-37f7-44b8-a12d-373f6caa6ea1" value="de"></attvalue>
+          <attvalue for="c6d55404-caab-4d1a-b7e5-9daf09455c00" value="Newsportal"></attvalue>
+        </attvalues>
+        <viz:size value="138.86032"></viz:size>
+        <viz:position x="-1636.3972" y="-1078.8081" z="0.0"></viz:position>
+        <viz:color r="91" g="152" b="184"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="577ed545-0b80-4c5f-bc57-696def3cf963" source="Wernerschepper" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="212589b2-5961-4597-9e02-1172f6130d50" source="Wernerschepper" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="cf9475f8-4f9e-4078-985a-2c185e8f36b9" source="ExCR_Sieber" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="865272bc-e0aa-4fdd-8608-48e3d962bf9d" source="ExCR_Sieber" target="tagesanzeiger">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="734f3e14-bb82-4eae-b51a-8ea50a141bf4" source="redder66" target="tagesanzeiger">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="50fe098a-b03a-41b4-a17a-3f73fb9af94a" source="redder66" target="NZZ">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f58d1ae7-b8fe-4ea8-81a7-744ad3238f85" source="Swiss_Pavilion" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a622ddb0-3e73-4d9b-b386-f54adf6bf1d6" source="Swiss_Pavilion" target="NZZ">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f44681d3-4990-4fc9-b837-8cbf161b97ff" source="pixelfreund" target="tagesanzeiger">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f22b45f1-0df1-4799-b5a8-5919094e9bbe" source="pixelfreund" target="blickamabend">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b7f6ed67-9e6d-4a62-a068-65af6b2a6a81" source="AndreaJerger" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="79166238-9533-41db-a3f9-eeec7335325b" source="AndreaJerger" target="blickamabend">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3043dead-1d0f-4b89-8965-59ce73c55f4d" source="pellissier" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4d458e12-4844-42a0-843e-7954e3804bfa" source="pellissier" target="NZZ">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a1694c3c-ed37-4efa-8c6f-dac3cd0be2be" source="Neue_LZ" target="watson_news">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bd78d0d6-70fe-44e4-8e0e-d2a82750e515" source="Neue_LZ" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9768e24d-73b8-429f-a80f-7f01e8f4d098" source="_freestayhotels" target="blickamabend">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5962f3fa-e189-47b0-b275-e071f23cfab4" source="_freestayhotels" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d7a963d6-c0e7-43da-9923-c732d5e44002" source="queer_de" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f2e6f3d4-cd1c-404e-9f1e-356907e7a059" source="queer_de" target="NZZ">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="790d44d4-160c-4aef-a05e-54c85d9e6971" source="ChristaMarkwald" target="tagesanzeiger">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e4a7a767-28f4-47ce-a740-c4f6dba2dc13" source="ChristaMarkwald" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="85930fab-9a20-42b5-9c78-d60648affa32" source="PLR_Suisse" target="tagesanzeiger">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1aa28b95-f0fc-406e-8ecd-f9bcb2b0cb6f" source="PLR_Suisse" target="20min">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f9841260-44b1-42dd-8601-ad661cad68d8" source="ABSyst" target="Blickch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d33c87ba-47ef-499b-810e-12240ab392f5" source="ABSyst" target="Weltwoche">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d5f1f914-fe49-4a58-81b4-fc704db9cda0" source="MihajloHarmonik" target="blickamabend">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="03d78b64-5e29-4149-af21-fcd1100b9f15" source="MihajloHarmonik" target="20min">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b981cd35-e5a3-4bcb-8049-d8f6cf45cba1" source="NZZ" target="20min">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

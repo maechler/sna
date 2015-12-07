@@ -19,18 +19,19 @@ public class NewsportalFetcher_Main {
 
             return;
         }
-
+        
+        @SuppressWarnings("serial")
+        ArrayList<String> newsportals = new ArrayList<String>() {};
+        newsportals.add("tagesanzeiger");
+        newsportals.add("watson_news");
+        newsportals.add("Weltwoche");
+        newsportals.add("blickamabend");
+        newsportals.add("Blickch");
+        newsportals.add("NZZ");
+        newsportals.add("20min");
+        
         switch (args[0]) {
             case "fetch":
-                ArrayList<String> newsportals = new ArrayList<String>() {};
-                newsportals.add("tagesanzeiger");
-                newsportals.add("watson_news");
-                newsportals.add("Weltwoche");
-                newsportals.add("blickamabend");
-                newsportals.add("Blickch");
-                newsportals.add("NZZ");
-                newsportals.add("20min");
-
                 if (args.length < 2) {
                     LOG.error("Must specify two arguments for command fetch: fetch ids, fetch newsportals, fetch newsportalFollowers, fetch humanFollowers");
                 } else {
@@ -58,6 +59,20 @@ public class NewsportalFetcher_Main {
                 
             case "analyse":
                 switch (args[1]) {
+                    case "UserOverlapsAllNewsportals":
+                        LOG.info("Method finished: analyseUserOverlapsAllNewsportals");
+                        int[] list = new AnalyseFollowerOverlaps().analyseUserOverlapsAllNewsportals(newsportals);
+                        
+                        int i = 0;
+                        for(int s : list)
+                        {
+                            System.out.println("Followers with connection to "+i+" of "+newsportals.size()+": "+s);
+                            i++;
+                        }
+                        
+                        
+                        LOG.info("Method finished: analyseUserOverlapsAllNewsportals");
+                        break;
                     case "SpecificOverlaps":
                         analyseSpecificOverlaps();
                         break;

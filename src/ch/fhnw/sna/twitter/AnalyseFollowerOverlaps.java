@@ -17,17 +17,24 @@ public class AnalyseFollowerOverlaps {
         int[] duplicates = new int[newsportals.size()+1];
         
         List<String> ids = new ArrayList<>();
+        List<String> ids_distinct = new ArrayList<>();
+        
         for (String newsportal : newsportals) {
             BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 ids.add(line);
+                if(!ids_distinct.contains(line))
+                {
+                    ids_distinct.add(line);
+                }
             }
-
             in.close();
-            
         }
         
-        for(String id : ids)
+        System.out.println("List uf distinct user: "+ids_distinct.size());
+        System.out.println("List uf all users incl. dups: "+ids.size());
+        
+        for(String id : ids_distinct)
         {
             int occurrences = Collections.frequency(ids, id);
             duplicates[occurrences] = duplicates[occurrences]+1;
