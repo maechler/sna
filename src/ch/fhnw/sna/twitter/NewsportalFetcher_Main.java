@@ -55,6 +55,18 @@ public class NewsportalFetcher_Main {
             case "export":
                 export(args);
                 break;
+                
+            case "analyse":
+                switch (args[1]) {
+                    case "SpecificOverlaps":
+                        analyseSpecificOverlaps();
+                        break;
+                    case "SpecificOverlaps5percent":
+                        analyseSpecificOverlaps5percent();
+                        break;
+                }
+            break;
+                
             default:
                 LOG.error("Invalid command provided: " + args[0]);
         }
@@ -125,5 +137,69 @@ public class NewsportalFetcher_Main {
         db.close();
 
         LOG.info("Method finished: export");
+    }
+    
+    private static void analyseSpecificOverlaps() throws IOException{
+        LOG.info("Method started: analyseSpecificOverlaps");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","watson_news");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","Weltwoche");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","Weltwoche");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Blickch","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Blickch","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("NZZ","20min");
+        LOG.info("Method finished: analyseSpecificOverlaps");
+    }
+    
+    private static void analyseSpecificOverlaps5percent() throws IOException{
+        LOG.info("Method started: analyseSpecificOverlaps5percent");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","watson_news");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","Weltwoche");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("tagesanzeiger","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("watson_news","Weltwoche");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("watson_news","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("watson_news","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("watson_news","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("watson_news","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Weltwoche","blickamabend");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Weltwoche","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Weltwoche","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Weltwoche","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("blickamabend","Blickch");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("blickamabend","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("blickamabend","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Blickch","NZZ");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("Blickch","20min");
+        
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals5percent("NZZ","20min");
+        LOG.info("Method finished: analyseSpecificOverlaps5percent");
     }
 }
