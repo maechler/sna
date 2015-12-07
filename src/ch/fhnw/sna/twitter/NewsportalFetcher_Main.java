@@ -21,14 +21,14 @@ public class NewsportalFetcher_Main {
             return;
         }
 
+        ArrayList<String> newsportals = new ArrayList<String>() {};
+        newsportals.add("FHNWTechnik");
+        newsportals.add("engineeringzhaw");
+        newsportals.add("digideation");
+        newsportals.add("HSR_Informatik");
+
         switch (args[0]) {
             case "fetch":
-                ArrayList<String> newsportals = new ArrayList<String>() {};
-                newsportals.add("FHNWTechnik");
-                newsportals.add("engineeringzhaw");
-                newsportals.add("digideation");
-                newsportals.add("HSR_Informatik");
-
                 if (args.length < 2) {
                     LOG.error("Must specify two arguments for command fetch: fetch ids, fetch newsportals, fetch newsportalFollowers, fetch humanFollowers");
                 } else {
