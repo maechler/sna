@@ -35,7 +35,7 @@ public class NewsportalFetcher {
 
         for (Long id : nodeIds) {
             current++;
-            if (db.countEdgesFrom(id) < 2) continue;
+            //if (db.countEdgesFrom(id) < 2) continue;
 
             TwitterUser node = db.findNodeById(id);
             cursor =-1L;
@@ -135,7 +135,7 @@ public class NewsportalFetcher {
     }
 
     private List<String> readIds(String newsportal) throws IOException {
-        BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+"_5percent.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
         List<String> ids = new ArrayList<>();
 
         for (String line = in.readLine(); line != null; line = in.readLine()) {
@@ -189,8 +189,8 @@ public class NewsportalFetcher {
             } while ((cursor = ids.getNextCursor()) != 0);  
             
             // Nach jedem Newsportal 16 Minuten warten
-            LOG.info("Sleeping...");
-            Thread.sleep(16 * 60 * 1000);
+            //LOG.info("Sleeping...");
+            //Thread.sleep(16 * 60 * 1000);
         }
         LOG.info("End");
     }

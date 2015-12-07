@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class DatabaseAccess {
-    private final String databaseFilePath = "database/data";
+    private final String databaseFilePath = "database/data_fh";
     private final String databaseSchemaPath = "database/schema.sql";
     private SQLiteConnection db;
 

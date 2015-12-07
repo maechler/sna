@@ -37,7 +37,7 @@ public class NewsportalGephiExport {
     private static final Logger LOG = LoggerFactory.getLogger(NewsportalGephiExport.class);
     private static final String OUTPUT_FOLDER = "output/";
     private final String OUTPUT_FILE;
-    private final int MIN_NEWSPORTAL_FOLLOWINGS = 2;
+    private final int MIN_NEWSPORTAL_FOLLOWINGS = 0;
 
     // Node attributes
     AttributeList attrList = new AttributeListImpl(AttributeClass.NODE);
