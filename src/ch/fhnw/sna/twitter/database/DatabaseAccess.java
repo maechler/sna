@@ -9,10 +9,7 @@ import com.almworks.sqlite4java.SQLiteStatement;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class DatabaseAccess {
     private final String databaseFilePath = "database/data";
@@ -45,7 +42,7 @@ public class DatabaseAccess {
     }
 
     public void saveNode(TwitterUser user) throws SQLiteException {
-        SQLiteStatement st = db.prepare("INSERT OR REPLACE INTO nodes VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+        SQLiteStatement st = db.prepare("INSERT OR REPLACE INTO nodes VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
         try {
             st.bind(1, user.getId());
@@ -59,6 +56,8 @@ public class DatabaseAccess {
             st.bind(9, user.getLang());
             st.bind(10, user.getType());
             st.bind(11, user.getLoadedFollowers() ? "1" : "0");
+            st.bind(12, user.getCreatedAt().toString());
+            st.bind(13, user.getTweetsFavorite());
 
             st.step();
         } finally {
@@ -111,6 +110,8 @@ public class DatabaseAccess {
         node.setLocation(st.columnString(7));
         node.setLang(st.columnString(8));
         node.setLoadedFollowers(st.columnInt(10) == 1);
+        node.setCreatedAt(new Date(st.columnString(11)));
+        node.setTweetsFavorite(st.columnInt(12));
 
         return node;
     }

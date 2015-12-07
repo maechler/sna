@@ -15,5 +15,7 @@ CREATE TABLE IF NOT EXISTS nodes (
   'location' VARCHAR(255) NOT NULL,
   'lang' VARCHAR(255) NOT NULL,
   'type' VARCHAR(255) NOT NULL,
-  'loadedFollowers' int DEFAULT 0 NOT NULL
+  'loadedFollowers' int DEFAULT 0 NOT NULL,
+  'createdAt' DATETIME NOT NULL,
+  'tweetsFavorite' VARCHAR(255) NOT NULL
 );

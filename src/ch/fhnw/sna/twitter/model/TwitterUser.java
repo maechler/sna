@@ -2,16 +2,20 @@ package ch.fhnw.sna.twitter.model;
 
 import twitter4j.User;
 
+import java.util.Date;
+
 public class TwitterUser {
     protected int followersCount = 0;
     protected int followingsCount = 0;
     protected int tweetsCount = 0;
+    protected int tweetsFavorite = 0;
     protected boolean loadedFollowers = false;
     protected String description;
     protected String screenName;
     protected String name;
     protected String location;
     protected String lang;
+    protected Date createdAt;
     protected long id;
     protected final String type;
     public static final String TYPE_HUMAN = "Human";
@@ -31,6 +35,9 @@ public class TwitterUser {
         lang = user.getLang();
         tweetsCount = user.getStatusesCount();
         followingsCount = user.getFriendsCount();
+        tweetsFavorite = user.getFavouritesCount();
+        createdAt = user.getCreatedAt();
+
         this.type = type;
     }
 
@@ -116,5 +123,21 @@ public class TwitterUser {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public int getTweetsFavorite() {
+        return tweetsFavorite;
+    }
+
+    public void setTweetsFavorite(int tweetsFavorite) {
+        this.tweetsFavorite = tweetsFavorite;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 }
