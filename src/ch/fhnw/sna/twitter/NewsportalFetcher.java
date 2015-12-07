@@ -12,6 +12,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.*;
 
 public class NewsportalFetcher {
@@ -24,7 +25,7 @@ public class NewsportalFetcher {
         this.db = db;
     }
 
-    public void fetchHumanFollowers() throws TwitterException, SQLiteException, InterruptedException {
+    public void fetchHumanFollowers() throws TwitterException, SQLiteException, InterruptedException, ParseException {
         List<Long> nodeIds = db.findAllNodeIds();
         int requestLimitPerMinutes = 15; //request limit per 15 minutes
         long cursor =-1L;
@@ -80,7 +81,7 @@ public class NewsportalFetcher {
         }
     }
 
-    public void fetchHumans(ArrayList<String> newsportals) throws InterruptedException, IOException, TwitterException, SQLiteException {
+    public void fetchHumans(ArrayList<String> newsportals) throws InterruptedException, IOException, TwitterException, SQLiteException, ParseException {
         int requestLimitPerMinutes = 15; //request limit per 15 minutes
         int rowsPerRequest = 100;
         List<String> newsportalIds;

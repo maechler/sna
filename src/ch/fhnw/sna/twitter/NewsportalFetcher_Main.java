@@ -1,6 +1,7 @@
 package ch.fhnw.sna.twitter;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import ch.fhnw.sna.twitter.database.DatabaseAccess;
@@ -13,7 +14,7 @@ import twitter4j.TwitterException;
 public class NewsportalFetcher_Main {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher_Main.class);
 
-    public static void main(String[] args) throws TwitterException, InterruptedException, IOException, SQLiteException {
+    public static void main(String[] args) throws TwitterException, InterruptedException, IOException, SQLiteException, ParseException {
         if (args.length == 0) {
             LOG.error("Must provide an argument: fetch, export");
 
@@ -97,7 +98,7 @@ public class NewsportalFetcher_Main {
         LOG.info("Method finished: fetch ids");
     }
 
-    private static void fetchHumanFollowers(String[] args) throws SQLiteException, IOException, TwitterException, InterruptedException {
+    private static void fetchHumanFollowers(String[] args) throws SQLiteException, IOException, TwitterException, InterruptedException, ParseException {
         LOG.info("Method started: fetch humanFollowers");
 
         DatabaseAccess db = new DatabaseAccess();
@@ -109,7 +110,7 @@ public class NewsportalFetcher_Main {
         LOG.info("Method finished: fetch humanFollowers");
     }
 
-    private static void fetchNewsportalFollowers(String[] args, ArrayList<String> newsportals) throws SQLiteException, IOException, TwitterException, InterruptedException {
+    private static void fetchNewsportalFollowers(String[] args, ArrayList<String> newsportals) throws SQLiteException, IOException, TwitterException, InterruptedException, ParseException {
         LOG.info("Method started: fetch newsportalFollowers");
 
         DatabaseAccess db = new DatabaseAccess();
@@ -133,7 +134,7 @@ public class NewsportalFetcher_Main {
         LOG.info("Method finished: fetch newsportals");
     }
 
-    private static void export(String[] args) throws SQLiteException, IOException {
+    private static void export(String[] args) throws SQLiteException, IOException, ParseException {
         LOG.info("Method started: export");
         String filename = "Newsportals.gexf";
         DatabaseAccess db = new DatabaseAccess();

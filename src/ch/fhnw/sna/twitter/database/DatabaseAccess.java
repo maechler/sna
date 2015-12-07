@@ -5,10 +5,14 @@ import ch.fhnw.sna.twitter.utility.IO;
 import com.almworks.sqlite4java.SQLiteConnection;
 import com.almworks.sqlite4java.SQLiteException;
 import com.almworks.sqlite4java.SQLiteStatement;
+import twitter4j.PagableResponseList;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class DatabaseAccess {
@@ -65,7 +69,7 @@ public class DatabaseAccess {
         }
     }
 
-    public TwitterUser findNodeByScreenName(String screenName) throws SQLiteException{
+    public TwitterUser findNodeByScreenName(String screenName) throws SQLiteException, ParseException {
         SQLiteStatement st = db.prepare("SELECT * FROM nodes WHERE screenName=?");
         TwitterUser node;
 
@@ -81,7 +85,7 @@ public class DatabaseAccess {
         return node;
     }
 
-    public TwitterUser findNodeById(long id) throws SQLiteException{
+    public TwitterUser findNodeById(long id) throws SQLiteException, ParseException {
         SQLiteStatement st = db.prepare("SELECT * FROM nodes WHERE id=?");
         TwitterUser node;
 
@@ -97,8 +101,11 @@ public class DatabaseAccess {
         return node;
     }
 
-    private TwitterUser createNodeFromStatement(SQLiteStatement st) throws SQLiteException {
+    private TwitterUser createNodeFromStatement(SQLiteStatement st) throws SQLiteException, ParseException {
         TwitterUser node = new TwitterUser(st.columnString(9));
+        String target = "Thu Sep 28 20:29:30 JST 2000";
+        DateFormat df = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy", Locale.ENGLISH);
+        Date result =  df.parse(target);
 
         node.setId(st.columnLong(0));
         node.setScreenName(st.columnString(1));
@@ -110,7 +117,7 @@ public class DatabaseAccess {
         node.setLocation(st.columnString(7));
         node.setLang(st.columnString(8));
         node.setLoadedFollowers(st.columnInt(10) == 1);
-        node.setCreatedAt(new Date(st.columnString(11)));
+        node.setCreatedAt(df.parse(st.columnString(11)));
         node.setTweetsFavorite(st.columnInt(12));
 
         return node;
@@ -147,7 +154,7 @@ public class DatabaseAccess {
         return allEdges;
     }
 
-    public List<TwitterUser> findAllNodes() throws SQLiteException {
+    public List<TwitterUser> findAllNodes() throws SQLiteException, ParseException {
         List<TwitterUser> allNodes = new ArrayList<>();
         SQLiteStatement st = db.prepare("SELECT * FROM nodes");
 
