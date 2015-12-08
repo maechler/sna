@@ -23,9 +23,12 @@ public class NewsportalFetcher_Main {
 
         ArrayList<String> newsportals = new ArrayList<String>() {};
         newsportals.add("FHNWTechnik");
-        newsportals.add("engineeringzhaw");
-        newsportals.add("digideation");
-        newsportals.add("HSR_Informatik");
+        newsportals.add("fhnw_i4ds");
+        newsportals.add("IT_FHNW");
+        newsportals.add("iwifhnw");
+        newsportals.add("ic_fhnw");
+        newsportals.add("dotFHNW");
+        newsportals.add("ITHGKFHNW");
 
         switch (args[0]) {
             case "fetch":
