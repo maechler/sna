@@ -6,6 +6,7 @@ import ch.fhnw.sna.twitter.model.TwitterUser;
 import com.almworks.sqlite4java.SQLiteException;
 import twitter4j.*;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.util.*;
+import java.util.List;
 
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
@@ -42,10 +44,10 @@ public class NewsportalFetcher {
             cursor =-1L;
             ids = null;
 
-            if (!node.getLoadedFollowers()) {
+            if (!node.getLoadedFollowers() && node.getFollowersCount() < 100000) {
                     do {
                         try {
-                            ids = twitter.getFollowersIDs(cursor);
+                            ids = twitter.getFollowersIDs(id, cursor);
 
                         } catch (TwitterException e) {
                             if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;

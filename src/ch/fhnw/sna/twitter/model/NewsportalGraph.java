@@ -2,6 +2,7 @@ package ch.fhnw.sna.twitter.model;
 
 import ch.fhnw.sna.twitter.database.DatabaseAccess;
 import com.almworks.sqlite4java.SQLiteException;
+import javafx.util.Pair;
 
 import java.text.ParseException;
 import java.util.*;
@@ -46,14 +47,14 @@ public class NewsportalGraph {
     public static NewsportalGraph createFromDB(DatabaseAccess db) throws SQLiteException, ParseException {
         NewsportalGraph graph = new NewsportalGraph();
         List<TwitterUser> users = db.findAllNodes();
-        Map<Long, Long> edges = db.findAllEdges();
+        List<Pair<Long,Long>> edges = db.findAllEdges();
 
         for (TwitterUser user: users) {
             graph.addNode(user);
         }
 
-        for (Long key : edges.keySet()) {
-            graph.addEdge(key, edges.get(key));
+        for (Pair<Long,Long> pair : edges) {
+            graph.addEdge(pair.getKey(), pair.getValue());
         }
 
         return graph;

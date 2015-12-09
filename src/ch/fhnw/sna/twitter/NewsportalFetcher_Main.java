@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 import ch.fhnw.sna.twitter.database.DatabaseAccess;
 import ch.fhnw.sna.twitter.model.NewsportalGraph;
-import ch.fhnw.sna.twitter.model.TwitterUser;
-import ch.fhnw.sna.twitter.utility.IO;
 import com.almworks.sqlite4java.SQLiteException;
 import twitter4j.TwitterException;
 

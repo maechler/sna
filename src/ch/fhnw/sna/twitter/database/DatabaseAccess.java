@@ -5,6 +5,7 @@ import ch.fhnw.sna.twitter.utility.IO;
 import com.almworks.sqlite4java.SQLiteConnection;
 import com.almworks.sqlite4java.SQLiteException;
 import com.almworks.sqlite4java.SQLiteStatement;
+import javafx.util.Pair;
 import twitter4j.PagableResponseList;
 
 import java.io.File;
@@ -139,13 +140,13 @@ public class DatabaseAccess {
         return count;
     }
 
-    public Map<Long, Long> findAllEdges() throws SQLiteException {
-        Map<Long, Long> allEdges = new HashMap<>();
+    public List<Pair<Long,Long>> findAllEdges() throws SQLiteException {
+        List<Pair<Long,Long>> allEdges = new ArrayList<>();
         SQLiteStatement st = db.prepare("SELECT * FROM edges");
 
         try {
             while (st.step()) {
-                allEdges.put(st.columnLong(0), st.columnLong(1));
+                allEdges.add(new Pair<>(st.columnLong(0), st.columnLong(1)));
             }
         } finally {
             st.dispose();
