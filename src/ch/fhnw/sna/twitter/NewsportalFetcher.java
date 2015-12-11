@@ -21,6 +21,7 @@ public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
     private Twitter twitter = new TwitterFactory().getInstance();
     private static final int ERROR_CODE_RATE_LIMIT_EXCEEDED = 88;
+    private static final int STATUS_CODE_ACCESS_DENIED = 401;
     private DatabaseAccess db;
 
     public NewsportalFetcher(DatabaseAccess db) {
@@ -34,44 +35,67 @@ public class NewsportalFetcher {
         IDs ids;
         double total = nodeIds.size();
         double current = 0;
+        boolean foundSpecialUser;
+        int friendsCount = 0;
         DecimalFormat df = new DecimalFormat("#0.00");
+        List<Long> specialUsers = new ArrayList<>();
 
         for (Long id : nodeIds) {
             current++;
             //if (db.countEdgesFrom(id) < 2) continue;
+            if (specialUsers.contains(id)) continue;
 
             TwitterUser node = db.findNodeById(id);
             cursor =-1L;
             ids = null;
+            foundSpecialUser = false;
 
             if (!node.getLoadedFollowers() && node.getFollowersCount() < 100000) {
-                    do {
-                        try {
-                            ids = twitter.getFollowersIDs(id, cursor);
+                do {
+                    try {
+                        ids = twitter.getFollowersIDs(id, cursor);
 
-                        } catch (TwitterException e) {
-                            if (e.getErrorCode() != ERROR_CODE_RATE_LIMIT_EXCEEDED) throw e;
+                    } catch (TwitterException e) {
+                        if (e.getStatusCode() == STATUS_CODE_ACCESS_DENIED) {
+                            specialUsers.add(id);
+                            foundSpecialUser = true;
 
+                            LOG.info("TwitterException:  " + e.getMessage());
+                            LOG.info("Special user:  " + node.getScreenName() + "(" + specialUsers.size() + ")");
+                        } else if (e.getErrorCode() == ERROR_CODE_RATE_LIMIT_EXCEEDED) {
                             LOG.info("TwitterException:  " + e.getErrorMessage());
                             LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
                             LOG.info("Followers loaded to " + df.format((current / total)*100) + "%");
 
                             Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
+                        } else {
+                            throw e;
                         }
+                    }
 
-                        if (ids != null) {
-                            for (long toId : ids.getIDs()) {
-                                if (nodeIds.contains(toId)) {
-                                    db.saveEdge(node.getId(), toId);
-                                    LOG.info("found friends, ooh!");
-                                }
+                    if (ids != null) {
+                        for (long toId : ids.getIDs()) {
+                            if (nodeIds.contains(toId)) {
+                                db.saveEdge(node.getId(), toId);
+                                Toolkit.getDefaultToolkit().beep();
+                                LOG.info("found friends, yay (" + ++friendsCount + ")" );
                             }
                         }
-                    } while(ids == null || (cursor = ids.getNextCursor())!=0 );
+                    }
+                } while((ids == null || (cursor = ids.getNextCursor())!=0) && !foundSpecialUser);
 
-                node.setLoadedFollowers(true);
-                db.saveNode(node);
+                if (!foundSpecialUser) {
+                    node.setLoadedFollowers(true);
+                    db.saveNode(node);
+                }
             }
+        }
+
+        LOG.info(specialUsers.size() + " special users found." );
+
+        for (Long specialUserId : specialUsers) {
+            TwitterUser node = db.findNodeById(specialUserId);
+            LOG.info("special user: " + node.getScreenName());
         }
     }
 

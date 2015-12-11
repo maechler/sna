@@ -6,7 +6,6 @@ import com.almworks.sqlite4java.SQLiteConnection;
 import com.almworks.sqlite4java.SQLiteException;
 import com.almworks.sqlite4java.SQLiteStatement;
 import javafx.util.Pair;
-import twitter4j.PagableResponseList;
 
 import java.io.File;
 import java.io.IOException;
