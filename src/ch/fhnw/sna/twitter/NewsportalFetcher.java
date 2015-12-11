@@ -5,6 +5,7 @@ import ch.fhnw.sna.twitter.model.NewsportalGraph;
 import ch.fhnw.sna.twitter.model.TwitterUser;
 import com.almworks.sqlite4java.SQLiteException;
 import twitter4j.*;
+import twitter4j.conf.ConfigurationBuilder;
 
 import java.awt.*;
 import java.io.BufferedReader;
@@ -19,19 +20,47 @@ import java.util.List;
 
 public class NewsportalFetcher {
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(NewsportalFetcher.class);
+    private List<Twitter> twitters = new ArrayList();
+    private int currentTwitterIndex = 0;
     private Twitter twitter = new TwitterFactory().getInstance();
     private static final int ERROR_CODE_RATE_LIMIT_EXCEEDED = 88;
     private static final int STATUS_CODE_ACCESS_DENIED = 401;
     private DatabaseAccess db;
+    private boolean useFastFarming = false;
 
     public NewsportalFetcher(DatabaseAccess db) {
         this.db = db;
+
+        if (useFastFarming) {
+            ConfigurationBuilder cb = new ConfigurationBuilder();
+            cb.setDebugEnabled(true)
+                    .setOAuthConsumerKey("*")
+                    .setOAuthConsumerSecret("*")
+                    .setOAuthAccessToken("*")
+                    .setOAuthAccessTokenSecret("*");
+            TwitterFactory tf = new TwitterFactory(cb.build());
+            Twitter twitter = tf.getInstance();
+
+            ConfigurationBuilder cb2 = new ConfigurationBuilder();
+            cb2.setDebugEnabled(true)
+                    .setOAuthConsumerKey("*")
+                    .setOAuthConsumerSecret("*")
+                    .setOAuthAccessToken("*")
+                    .setOAuthAccessTokenSecret("*");
+            TwitterFactory tf2 = new TwitterFactory(cb2.build());
+            Twitter twitter2 = tf2.getInstance();
+
+            twitters.add(twitter);
+            twitters.add(twitter2);
+        } else {
+            twitters.add(this.twitter);
+        }
     }
 
     public void fetchHumanFollowers() throws TwitterException, SQLiteException, InterruptedException, ParseException {
         List<Long> nodeIds = db.findAllNodeIds();
         int requestLimitPerMinutes = 15; //request limit per 15 minutes
-        long cursor =-1L;
+        long cursor;
         IDs ids;
         double total = nodeIds.size();
         double current = 0;
@@ -53,32 +82,38 @@ public class NewsportalFetcher {
             if (!node.getLoadedFollowers() && node.getFollowersCount() < 100000) {
                 do {
                     try {
-                        ids = twitter.getFollowersIDs(id, cursor);
+                        ids = twitters.get(currentTwitterIndex).getFollowersIDs(id, cursor);
 
                     } catch (TwitterException e) {
                         if (e.getStatusCode() == STATUS_CODE_ACCESS_DENIED) {
                             specialUsers.add(id);
                             foundSpecialUser = true;
 
-                            LOG.info("TwitterException:  " + e.getMessage());
-                            LOG.info("Special user:  " + node.getScreenName() + "(" + specialUsers.size() + ")");
+                            LOG.info("Special user: " + node.getScreenName() + " (" + specialUsers.size() + ")");
                         } else if (e.getErrorCode() == ERROR_CODE_RATE_LIMIT_EXCEEDED) {
-                            LOG.info("TwitterException:  " + e.getErrorMessage());
-                            LOG.info("Sleeping for  " + (requestLimitPerMinutes + 1) + "min");
-                            LOG.info("Followers loaded to " + df.format((current / total)*100) + "%");
+                            if (currentTwitterIndex + 1 == twitters.size()) {
+                                LOG.info("TwitterException:  " + e.getErrorMessage());
+                                LOG.info("Sleeping for  " + ((requestLimitPerMinutes / twitters.size()) + 1) + "min");
+                                LOG.info("Followers loaded to " + df.format((current / total)*100) + "%");
+                                LOG.info("Newly Found friends: " + friendsCount);
 
-                            Thread.sleep((requestLimitPerMinutes + 1)*60*1000);
+                                Thread.sleep(((requestLimitPerMinutes / twitters.size()) + 1)*60*1000);
+                                currentTwitterIndex = 0;
+                                LOG.info("Resetting twitter to index=" + currentTwitterIndex);
+                            } else {
+                                currentTwitterIndex++;
+                                LOG.info("Switching twitter to index=" + currentTwitterIndex);
+                            }
                         } else {
                             throw e;
                         }
                     }
 
                     if (ids != null) {
-                        for (long toId : ids.getIDs()) {
-                            if (nodeIds.contains(toId)) {
-                                db.saveEdge(node.getId(), toId);
-                                Toolkit.getDefaultToolkit().beep();
-                                LOG.info("found friends, yay (" + ++friendsCount + ")" );
+                        for (long fromId : ids.getIDs()) {
+                            if (nodeIds.contains(fromId)) {
+                                friendsCount++;
+                                db.saveEdge(fromId, node.getId());
                             }
                         }
                     }
