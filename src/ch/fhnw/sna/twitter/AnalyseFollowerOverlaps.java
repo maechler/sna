@@ -43,6 +43,41 @@ public class AnalyseFollowerOverlaps {
         
         return duplicates;
     }
+
+    public String[][] analyseUserOverlapsAllNewsportalsID(ArrayList<String> newsportals) throws IOException
+    {
+
+        int[] duplicates = new int[newsportals.size()+1];
+
+        List<String> ids = new ArrayList<>();
+        List<String> ids_distinct = new ArrayList<>();
+
+        for (String newsportal : newsportals) {
+            BufferedReader in = new BufferedReader(new FileReader("data/"+newsportal+".txt"));
+            for (String line = in.readLine(); line != null; line = in.readLine()) {
+                ids.add(line);
+                if(!ids_distinct.contains(line))
+                {
+                    ids_distinct.add(line);
+                }
+            }
+            in.close();
+        }
+
+        System.out.println("List uf distinct user: "+ids_distinct.size());
+        System.out.println("List uf all users incl. dups: "+ids.size());
+
+        String [][] users = new String [newsportals.size()+1][ids_distinct.size()];
+
+        int i = 0;
+        for(String id : ids_distinct)
+        {
+            int occurrences = Collections.frequency(ids, id);
+            duplicates[occurrences] = duplicates[occurrences]+1;
+            users [occurrences][i++]= id;
+        }
+        return users;
+    }
     
     public Map<String, List<String>> analyseUserOverlapsSpecificNewsportals(String first, String last) throws IOException
     {
@@ -76,7 +111,7 @@ public class AnalyseFollowerOverlaps {
             int occurrences = Collections.frequency(ids, id);
             if(occurrences>1)
             {
-                // Wenn die ID in beiden newsportalen vorkommen, die ID aus der Liste der beiden Listen löschen und stattdessen der gemeinsamen Liste hinzufügen
+                // Wenn die ID in beiden newsportalen vorkommen, die ID aus der Liste der beiden Listen lï¿½schen und stattdessen der gemeinsamen Liste hinzufï¿½gen
                 for (String newsportal : newsportals) {
                     int deleteindex = duplicates.get(newsportal).indexOf(id);
                     if(deleteindex>=0)
@@ -144,7 +179,7 @@ public class AnalyseFollowerOverlaps {
             int occurrences = Collections.frequency(ids, id);
             if(occurrences>1)
             {
-                // Wenn die ID in beiden newsportalen vorkommen, die ID aus der Liste der beiden Listen löschen und stattdessen der gemeinsamen Liste hinzufügen
+                // Wenn die ID in beiden newsportalen vorkommen, die ID aus der Liste der beiden Listen lï¿½schen und stattdessen der gemeinsamen Liste hinzufï¿½gen
                 for (String newsportal : newsportals) {
                     int deleteindex = duplicates.get(newsportal).indexOf(id);
                     if(deleteindex>=0)

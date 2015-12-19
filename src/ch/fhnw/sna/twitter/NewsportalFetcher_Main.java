@@ -60,16 +60,39 @@ public class NewsportalFetcher_Main {
                     case "UserOverlapsAllNewsportals":
                         LOG.info("Method finished: analyseUserOverlapsAllNewsportals");
                         int[] list = new AnalyseFollowerOverlaps().analyseUserOverlapsAllNewsportals(newsportals);
-                        
+
                         int i = 0;
                         for(int s : list)
                         {
                             System.out.println("Followers with connection to "+i+" of "+newsportals.size()+": "+s);
                             i++;
                         }
-                        
-                        
+
+
                         LOG.info("Method finished: analyseUserOverlapsAllNewsportals");
+                        break;
+                    case "UserOverlapsAllNewsportalsID":
+                        LOG.info("Method finished: analyseUserOverlapsAllNewsportalsID");
+                        String[][] IDlist = new AnalyseFollowerOverlaps().analyseUserOverlapsAllNewsportalsID(newsportals);
+
+                        for (int j = newsportals.size(); j>0; --j){
+                            System.out.println("");
+                            System.out.println("ID's of followers with connection to "+j+" of "+newsportals.size()+": ");
+
+                            int count = 0;
+
+                            for (int k=0; k<IDlist[0].length; ++k ){
+                                if (IDlist[j][k] != null) {
+                                    System.out.println(IDlist[j][k]);
+                                    count++;
+                                }
+                            }
+                            System.out.println("");
+                            System.out.println("Total followers with connection to "+j+" of "+newsportals.size()+": " + count);
+                            System.out.println("");
+                        }
+
+                        LOG.info("Method finished: analyseUserOverlapsAllNewsportalsID");
                         break;
                     case "SpecificOverlaps":
                         analyseSpecificOverlaps();
@@ -155,32 +178,32 @@ public class NewsportalFetcher_Main {
     private static void analyseSpecificOverlaps() throws IOException{
         LOG.info("Method started: analyseSpecificOverlaps");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","watson_news");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","Weltwoche");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","blickamabend");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","Blickch");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","NZZ");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("tagesanzeiger","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","fhnw_i4ds");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","IT_FHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","iwifhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","ic_fhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","dotFHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("FHNWTechnik","ITHGKFHNW");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","Weltwoche");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","blickamabend");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","Blickch");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","NZZ");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("watson_news","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("fhnw_i4ds","IT_FHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("fhnw_i4ds","iwifhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("fhnw_i4ds","ic_fhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("fhnw_i4ds","dotFHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("fhnw_i4ds","ITHGKFHNW");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","blickamabend");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","Blickch");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","NZZ");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Weltwoche","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("IT_FHNW","iwifhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("IT_FHNW","ic_fhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("IT_FHNW","dotFHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("IT_FHNW","ITHGKFHNW");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","Blickch");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","NZZ");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("blickamabend","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("iwifhnw","ic_fhnw");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("iwifhnw","dotFHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("iwifhnw","ITHGKFHNW");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Blickch","NZZ");
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("Blickch","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("ic_fhnw","dotFHNW");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("ic_fhnw","ITHGKFHNW");
         
-        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("NZZ","20min");
+        new AnalyseFollowerOverlaps().analyseUserOverlapsSpecificNewsportals("dotFHNW","ITHGKFHNW");
         LOG.info("Method finished: analyseSpecificOverlaps");
     }
     
