@@ -11,7 +11,7 @@ public class NewsportalGraph {
     private Map<Long, TwitterUser> newsportals = new HashMap<>();
     private Map<Long, TwitterUser> humans = new HashMap<>();
     private Map<Long, Set<Long>> associations = new HashMap<>();
-    private static boolean onlyNewsportalFollowings = true;
+    private static boolean onlyNewsportalFollowings = false;
 
     public void addNode(TwitterUser node) {
         if (node.getType().equals(TwitterUser.TYPE_HUMAN)) {
