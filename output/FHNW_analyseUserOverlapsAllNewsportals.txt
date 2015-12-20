@@ -1,0 +1,13 @@
+analyseUserOverlapsAllNewsportals
+
+List uf distinct user: 1033
+List uf all users incl. dups: 1312
+
+Followers with connection to 0 of 7: 0
+Followers with connection to 1 of 7: 852
+Followers with connection to 2 of 7: 123
+Followers with connection to 3 of 7: 32
+Followers with connection to 4 of 7: 16
+Followers with connection to 5 of 7: 7
+Followers with connection to 6 of 7: 2
+Followers with connection to 7 of 7: 1

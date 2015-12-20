@@ -1,0 +1,89 @@
+analyseSpecificOverlaps
+
+FHNWTechnik only followers: 105 / 193.0 = 0.54404145
+fhnw_i4ds only followers: 42 / 193.0 = 0.21761657
+common follower of FHNWTechnik and fhnw_i4ds: 46 / 193.0 = 0.23834197
+
+FHNWTechnik only followers: 93 / 366.0 = 0.25409836
+IT_FHNW only followers: 203 / 366.0 = 0.5546448
+common follower of FHNWTechnik and IT_FHNW: 70 / 366.0 = 0.19125684
+
+FHNWTechnik only followers: 96 / 836.0 = 0.114832535
+iwifhnw only followers: 676 / 836.0 = 0.80861247
+common follower of FHNWTechnik and iwifhnw: 64 / 836.0 = 0.07655502
+
+FHNWTechnik only followers: 123 / 147.0 = 0.8367347
+ic_fhnw only followers: 14 / 147.0 = 0.0952381
+common follower of FHNWTechnik and ic_fhnw: 10 / 147.0 = 0.06802721
+
+FHNWTechnik only followers: 122 / 162.0 = 0.75308645
+dotFHNW only followers: 28 / 162.0 = 0.17283951
+common follower of FHNWTechnik and dotFHNW: 12 / 162.0 = 0.074074075
+
+FHNWTechnik only followers: 118 / 248.0 = 0.47580644
+ITHGKFHNW only followers: 110 / 248.0 = 0.44354838
+common follower of FHNWTechnik and ITHGKFHNW: 20 / 248.0 = 0.08064516
+
+fhnw_i4ds only followers: 47 / 303.0 = 0.15511551
+IT_FHNW only followers: 220 / 303.0 = 0.7260726
+common follower of fhnw_i4ds and IT_FHNW: 36 / 303.0 = 0.11881188
+
+fhnw_i4ds only followers: 50 / 773.0 = 0.06468305
+iwifhnw only followers: 693 / 773.0 = 0.89650714
+common follower of fhnw_i4ds and iwifhnw: 30 / 773.0 = 0.038809832
+
+fhnw_i4ds only followers: 62 / 84.0 = 0.7380952
+ic_fhnw only followers: 16 / 84.0 = 0.1904762
+common follower of fhnw_i4ds and ic_fhnw: 6 / 84.0 = 0.071428575
+
+fhnw_i4ds only followers: 61 / 99.0 = 0.61616164
+dotFHNW only followers: 30 / 99.0 = 0.3030303
+common follower of fhnw_i4ds and dotFHNW: 8 / 99.0 = 0.08080808
+
+fhnw_i4ds only followers: 59 / 185.0 = 0.3189189
+ITHGKFHNW only followers: 114 / 185.0 = 0.61621624
+common follower of fhnw_i4ds and ITHGKFHNW: 12 / 185.0 = 0.06486487
+
+IT_FHNW only followers: 134 / 946.0 = 0.14164905
+iwifhnw only followers: 604 / 946.0 = 0.6384778
+common follower of IT_FHNW and iwifhnw: 208 / 946.0 = 0.21987315
+
+IT_FHNW only followers: 226 / 257.0 = 0.8793774
+ic_fhnw only followers: 7 / 257.0 = 0.027237354
+common follower of IT_FHNW and ic_fhnw: 24 / 257.0 = 0.09338521
+
+IT_FHNW only followers: 227 / 272.0 = 0.83455884
+dotFHNW only followers: 23 / 272.0 = 0.08455882
+common follower of IT_FHNW and dotFHNW: 22 / 272.0 = 0.080882356
+
+IT_FHNW only followers: 185 / 358.0 = 0.51675975
+ITHGKFHNW only followers: 67 / 358.0 = 0.18715084
+common follower of IT_FHNW and ITHGKFHNW: 106 / 358.0 = 0.29608938
+
+iwifhnw only followers: 697 / 727.0 = 0.9587345
+ic_fhnw only followers: 8 / 727.0 = 0.011004127
+common follower of iwifhnw and ic_fhnw: 22 / 727.0 = 0.030261349
+
+iwifhnw only followers: 694 / 742.0 = 0.93530995
+dotFHNW only followers: 20 / 742.0 = 0.026954178
+common follower of iwifhnw and dotFHNW: 28 / 742.0 = 0.03773585
+
+iwifhnw only followers: 662 / 828.0 = 0.7995169
+ITHGKFHNW only followers: 74 / 828.0 = 0.08937198
+common follower of iwifhnw and ITHGKFHNW: 92 / 828.0 = 0.11111111
+
+ic_fhnw only followers: 12 / 53.0 = 0.2264151
+dotFHNW only followers: 27 / 53.0 = 0.509434
+common follower of ic_fhnw and dotFHNW: 14 / 53.0 = 0.26415095
+
+ic_fhnw only followers: 10 / 139.0 = 0.07194245
+ITHGKFHNW only followers: 111 / 139.0 = 0.79856116
+common follower of ic_fhnw and ITHGKFHNW: 18 / 139.0 = 0.1294964
+
+dotFHNW only followers: 22 / 154.0 = 0.14285715
+ITHGKFHNW only followers: 108 / 154.0 = 0.7012987
+common follower of dotFHNW and ITHGKFHNW: 24 / 154.0 = 0.15584415
+
+
+
+
