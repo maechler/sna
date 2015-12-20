@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-12-20">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" title="followersCount" type="integer"></attribute>
+      <attribute id="934f8100-eb88-42b8-b907-87b2cbb1e00c" title="followingsCount" type="integer"></attribute>
+      <attribute id="c9c6800b-30a4-414e-8bb3-ee4e13efec24" title="tweetsCount" type="integer"></attribute>
+      <attribute id="548b005a-167c-449f-a4e3-807b44111b79" title="description" type="string"></attribute>
+      <attribute id="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" title="screenName" type="string"></attribute>
+      <attribute id="5b86e7af-b131-4b06-be35-5044f6978db9" title="name" type="string"></attribute>
+      <attribute id="f19ad287-88b3-4233-b5cd-41ef8e741aab" title="location" type="string"></attribute>
+      <attribute id="826da04c-f847-4ca7-93a3-5c52be99d445" title="lang" type="string"></attribute>
+      <attribute id="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" title="type" type="string"></attribute>
+      <attribute id="indegree" title="In-Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="outdegree" title="Out-Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="IT_FHNW" label="IT_FHNW">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="237"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="51"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="419"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="IT_FHNW"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="FHNW_IT"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="FHNW @ Nordwestschweiz"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Newsportal"></attvalue>
+          <attvalue for="indegree" value="238"></attvalue>
+          <attvalue for="outdegree" value="12"></attvalue>
+          <attvalue for="degree" value="250"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="2051.3525" y="1672.0121" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="fhnw_i4ds" label="fhnw_i4ds">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="65"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="163"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="398"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="fhnw_i4ds"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Inst 4D Technologies"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Brugg-Windisch, Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Newsportal"></attvalue>
+          <attvalue for="indegree" value="65"></attvalue>
+          <attvalue for="outdegree" value="62"></attvalue>
+          <attvalue for="degree" value="127"></attvalue>
+        </attvalues>
+        <viz:size value="12.038123"></viz:size>
+        <viz:position x="3314.9592" y="144.93068" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="iwifhnw" label="iwifhnw">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="710"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="769"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="1574"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="iwifhnw"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="IWI FHNW"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Basel, Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Newsportal"></attvalue>
+          <attvalue for="indegree" value="708"></attvalue>
+          <attvalue for="outdegree" value="288"></attvalue>
+          <attvalue for="degree" value="996"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="-258.51706" y="-1021.2633" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="FHNWTechnik" label="FHNWTechnik">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="135"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="144"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="55"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="FHNWTechnik"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="FHNW Technik"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Brugg-Windisch, Olten, Muttenz"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Newsportal"></attvalue>
+          <attvalue for="indegree" value="129"></attvalue>
+          <attvalue for="outdegree" value="76"></attvalue>
+          <attvalue for="degree" value="205"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="952.0892" y="810.65594" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="dotFHNW" label="dotFHNW">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="34"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="14"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="34"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="dotFHNW"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="FHNW .Net courses"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="FHNW Brugg/Windisch"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Newsportal"></attvalue>
+          <attvalue for="indegree" value="34"></attvalue>
+          <attvalue for="outdegree" value="3"></attvalue>
+          <attvalue for="degree" value="37"></attvalue>
+        </attvalues>
+        <viz:size value="8.2045555"></viz:size>
+        <viz:position x="3291.0327" y="883.1446" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="catkinEU" label="catkinEU">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="199"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="927"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="254"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="catkinEU"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="catkin"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="6"></attvalue>
+          <attvalue for="outdegree" value="9"></attvalue>
+          <attvalue for="degree" value="15"></attvalue>
+        </attvalues>
+        <viz:size value="4.7419806"></viz:size>
+        <viz:position x="563.0847" y="-3757.048" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="laszloetesi" label="laszloetesi">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="57"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="152"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="241"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="laszloetesi"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Laszlo Istvan Etesi"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Switzerland, most of the time"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="18"></attvalue>
+          <attvalue for="outdegree" value="19"></attvalue>
+          <attvalue for="degree" value="37"></attvalue>
+        </attvalues>
+        <viz:size value="6.2259407"></viz:size>
+        <viz:position x="3693.2075" y="811.083" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="raumschiff_org" label="raumschiff_org">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="55"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="75"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="274"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="raumschiff_org"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="raumschiff"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Schweiz"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="18"></attvalue>
+          <attvalue for="outdegree" value="13"></attvalue>
+          <attvalue for="degree" value="31"></attvalue>
+        </attvalues>
+        <viz:size value="6.2259407"></viz:size>
+        <viz:position x="3094.4822" y="1337.7218" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="run_sascha" label="run_sascha">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="44"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="123"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="3"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="run_sascha"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Sascha Runser"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="10"></attvalue>
+          <attvalue for="outdegree" value="27"></attvalue>
+          <attvalue for="degree" value="37"></attvalue>
+        </attvalues>
+        <viz:size value="5.2366347"></viz:size>
+        <viz:position x="1705.1846" y="817.0344" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="MorpheusCup" label="MorpheusCup">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="596"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="2222"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="300"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="MorpheusCup"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="MorpheusCup"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Luxembourg"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="fr"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="28"></attvalue>
+          <attvalue for="degree" value="31"></attvalue>
+        </attvalues>
+        <viz:size value="4.3709917"></viz:size>
+        <viz:position x="-307.02466" y="1613.1927" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="Infoethik" label="Infoethik">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1418"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="777"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="12158"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="Infoethik"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Informationsethik"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Zürich"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="85"></attvalue>
+          <attvalue for="outdegree" value="39"></attvalue>
+          <attvalue for="degree" value="124"></attvalue>
+        </attvalues>
+        <viz:size value="14.511394"></viz:size>
+        <viz:position x="1156.9243" y="-773.1701" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="ProjektNeptun" label="ProjektNeptun">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="242"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="551"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="132"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="ProjektNeptun"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Projekt Neptun"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Sonneggstrasse 3, Zürich"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="42"></attvalue>
+          <attvalue for="outdegree" value="89"></attvalue>
+          <attvalue for="degree" value="131"></attvalue>
+        </attvalues>
+        <viz:size value="9.193865"></viz:size>
+        <viz:position x="-257.85254" y="1807.9523" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="extendance" label="extendance">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="237"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="719"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="207"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="extendance"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="extendance"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Zurich"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="30"></attvalue>
+          <attvalue for="outdegree" value="57"></attvalue>
+          <attvalue for="degree" value="87"></attvalue>
+        </attvalues>
+        <viz:size value="7.7099047"></viz:size>
+        <viz:position x="231.04669" y="-248.56119" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="SwissEdSocial" label="SwissEdSocial">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1486"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="484"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="3605"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="SwissEdSocial"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="The Digital Campus"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="San Francisco, CA"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="119"></attvalue>
+          <attvalue for="outdegree" value="45"></attvalue>
+          <attvalue for="degree" value="164"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="-245.3372" y="2119.4668" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="SwissEuresearch" label="SwissEuresearch">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1036"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="1183"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="1241"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="SwissEuresearch"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Euresearch"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Bern - Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="37"></attvalue>
+          <attvalue for="outdegree" value="38"></attvalue>
+          <attvalue for="degree" value="75"></attvalue>
+        </attvalues>
+        <viz:size value="8.575548"></viz:size>
+        <viz:position x="-84.38923" y="3542.6592" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="fabiankuenzli" label="fabiankuenzli">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="386"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="843"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="683"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="fabiankuenzli"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Fabian Künzli"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="15"></attvalue>
+          <attvalue for="outdegree" value="25"></attvalue>
+          <attvalue for="degree" value="40"></attvalue>
+        </attvalues>
+        <viz:size value="5.8549523"></viz:size>
+        <viz:position x="-1507.9534" y="-1082.1941" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="siltendo" label="siltendo">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="675"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="770"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="272"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="siltendo"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Silvan Seeholzer"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Luzern"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="28"></attvalue>
+          <attvalue for="outdegree" value="37"></attvalue>
+          <attvalue for="degree" value="65"></attvalue>
+        </attvalues>
+        <viz:size value="7.462576"></viz:size>
+        <viz:position x="-2275.4822" y="-554.124" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="STV_Engineering" label="STV_Engineering">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="530"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="912"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="542"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="STV_Engineering"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Swiss Engineering"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Zürich, Schweiz"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="33"></attvalue>
+          <attvalue for="outdegree" value="34"></attvalue>
+          <attvalue for="degree" value="67"></attvalue>
+        </attvalues>
+        <viz:size value="8.080893"></viz:size>
+        <viz:position x="-963.8343" y="2014.2599" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="SchneiderElecDE" label="SchneiderElecDE">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1896"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="2401"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="1230"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="SchneiderElecDE"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Schneider Electric"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Deutschland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="20"></attvalue>
+          <attvalue for="outdegree" value="22"></attvalue>
+          <attvalue for="degree" value="42"></attvalue>
+        </attvalues>
+        <viz:size value="6.4732695"></viz:size>
+        <viz:position x="823.83246" y="-3937.3306" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="theklamueller" label="theklamueller">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="94"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="258"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="138"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="theklamueller"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Thekla Muller"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Olten"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="42"></attvalue>
+          <attvalue for="outdegree" value="74"></attvalue>
+          <attvalue for="degree" value="116"></attvalue>
+        </attvalues>
+        <viz:size value="9.193865"></viz:size>
+        <viz:position x="1999.5654" y="494.39243" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="IT_Connection" label="IT_Connection">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="9833"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="9929"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="53863"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="IT_Connection"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="IT Connection"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Web"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="71"></attvalue>
+          <attvalue for="outdegree" value="63"></attvalue>
+          <attvalue for="degree" value="134"></attvalue>
+        </attvalues>
+        <viz:size value="12.780104"></viz:size>
+        <viz:position x="-197.63545" y="-3461.5222" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="nydesan" label="nydesan">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="166"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="216"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="209"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="nydesan"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Sandro Nydegger"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Brugg, Aargau"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="56"></attvalue>
+          <attvalue for="outdegree" value="65"></attvalue>
+          <attvalue for="degree" value="121"></attvalue>
+        </attvalues>
+        <viz:size value="10.925152"></viz:size>
+        <viz:position x="876.2491" y="107.80675" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="budimanjob" label="budimanjob">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="288"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="694"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="2273"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="budimanjob"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Michael Job"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="25"></attvalue>
+          <attvalue for="outdegree" value="49"></attvalue>
+          <attvalue for="degree" value="74"></attvalue>
+        </attvalues>
+        <viz:size value="7.091587"></viz:size>
+        <viz:position x="588.55396" y="125.84488" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="mdallavecchia" label="mdallavecchia">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="3548"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="2191"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="6828"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="mdallavecchia"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Prof. Dalla Vecchia"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Basel. Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="298"></attvalue>
+          <attvalue for="outdegree" value="143"></attvalue>
+          <attvalue for="degree" value="441"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="-1055.898" y="-1653.0951" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="gameculture_ch" label="gameculture_ch">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="2173"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="1981"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="12044"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="gameculture_ch"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="GameCulture"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="46"></attvalue>
+          <attvalue for="outdegree" value="37"></attvalue>
+          <attvalue for="degree" value="83"></attvalue>
+        </attvalues>
+        <viz:size value="9.6885195"></viz:size>
+        <viz:position x="-788.14984" y="1419.21" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="fhnw_io" label="fhnw_io">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="236"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="362"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="324"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="fhnw_io"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Optometry FHNW.ch"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Olten, Switzerland"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="35"></attvalue>
+          <attvalue for="outdegree" value="36"></attvalue>
+          <attvalue for="degree" value="71"></attvalue>
+        </attvalues>
+        <viz:size value="8.328222"></viz:size>
+        <viz:position x="1771.3595" y="1472.5118" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="schultze_info" label="schultze_info">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="332"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="1396"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="80"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="schultze_info"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Herbert Schultze"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Geneva"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="ru"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="13"></attvalue>
+          <attvalue for="outdegree" value="77"></attvalue>
+          <attvalue for="degree" value="90"></attvalue>
+        </attvalues>
+        <viz:size value="5.6076236"></viz:size>
+        <viz:position x="1436.9407" y="372.2" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="Frau_MINT" label="Frau_MINT">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="57"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="140"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="144"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="Frau_MINT"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Clelia Bieler"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Interregio Bern - Brugg"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="20"></attvalue>
+          <attvalue for="outdegree" value="33"></attvalue>
+          <attvalue for="degree" value="53"></attvalue>
+        </attvalues>
+        <viz:size value="6.4732695"></viz:size>
+        <viz:position x="518.474" y="2519.177" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="FHNW" label="FHNW">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1935"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="145"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="963"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="FHNW"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="FHNW"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Brugg-Windisch"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="454"></attvalue>
+          <attvalue for="outdegree" value="66"></attvalue>
+          <attvalue for="degree" value="520"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="722.02155" y="1438.187" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="hsaFHNW" label="hsaFHNW">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="544"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="229"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="979"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="hsaFHNW"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="FHNWsozialearbeit"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Olten / Basel"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="149"></attvalue>
+          <attvalue for="outdegree" value="61"></attvalue>
+          <attvalue for="degree" value="210"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="336.6961" y="2038.394" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="manfredvogel" label="manfredvogel">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="41"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="44"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="14"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="manfredvogel"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Manfred Vogel"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="18"></attvalue>
+          <attvalue for="outdegree" value="17"></attvalue>
+          <attvalue for="degree" value="35"></attvalue>
+        </attvalues>
+        <viz:size value="6.2259407"></viz:size>
+        <viz:position x="3472.029" y="941.1283" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="bttrsnck" label="bttrsnck">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="80"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="230"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="261"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="bttrsnck"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="marlene wittwer"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="8"></attvalue>
+          <attvalue for="outdegree" value="11"></attvalue>
+          <attvalue for="degree" value="19"></attvalue>
+        </attvalues>
+        <viz:size value="4.989309"></viz:size>
+        <viz:position x="1512.6533" y="-378.92526" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="ki_blog" label="ki_blog">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="707"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="1024"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="4919"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="ki_blog"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="KI Blog"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Deutschland / Dresden"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="16"></attvalue>
+          <attvalue for="outdegree" value="12"></attvalue>
+          <attvalue for="degree" value="28"></attvalue>
+        </attvalues>
+        <viz:size value="5.9786153"></viz:size>
+        <viz:position x="1136.5166" y="-2914.5815" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="swisseagle71" label="swisseagle71">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="10"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="73"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="73"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="swisseagle71"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Bernhard Schindler"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Aarau"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="5"></attvalue>
+          <attvalue for="outdegree" value="14"></attvalue>
+          <attvalue for="degree" value="19"></attvalue>
+        </attvalues>
+        <viz:size value="4.6183176"></viz:size>
+        <viz:position x="3047.989" y="1169.7854" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="Zukunftstag" label="Zukunftstag">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="42"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="40"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="28"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="Zukunftstag"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Zukunftstag"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="de"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="12"></attvalue>
+          <attvalue for="outdegree" value="10"></attvalue>
+          <attvalue for="degree" value="22"></attvalue>
+        </attvalues>
+        <viz:size value="5.4839606"></viz:size>
+        <viz:position x="272.21735" y="1817.4688" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+      <node id="FHNWbusiness" label="FHNWbusiness">
+        <attvalues>
+          <attvalue for="9a810599-18bf-4b8b-b9a9-7dfceb85b8bc" value="1101"></attvalue>
+          <attvalue for="934f8100-eb88-42b8-b907-87b2cbb1e00c" value="422"></attvalue>
+          <attvalue for="c9c6800b-30a4-414e-8bb3-ee4e13efec24" value="1563"></attvalue>
+          <attvalue for="6f67c2ae-d444-4dd3-b0e4-fdb9ad72f924" value="FHNWbusiness"></attvalue>
+          <attvalue for="5b86e7af-b131-4b06-be35-5044f6978db9" value="Business School FHNW"></attvalue>
+          <attvalue for="f19ad287-88b3-4233-b5cd-41ef8e741aab" value="Switzerland/Basel,Brugg,Olten"></attvalue>
+          <attvalue for="826da04c-f847-4ca7-93a3-5c52be99d445" value="en"></attvalue>
+          <attvalue for="2dd57ae4-3023-4ee7-9835-4c5bd2f05126" value="Human"></attvalue>
+          <attvalue for="indegree" value="336"></attvalue>
+          <attvalue for="outdegree" value="96"></attvalue>
+          <attvalue for="degree" value="432"></attvalue>
+        </attvalues>
+        <viz:size value="33.18457"></viz:size>
+        <viz:position x="203.44417" y="648.8385" z="0.0"></viz:position>
+        <viz:color r="44" g="123" b="182"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="707b778d-a6e9-4f2f-a5a2-8223fa1c2c2a" source="IT_FHNW" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="aadbedcd-ee3b-42c1-a535-8f0125f9438d" source="IT_FHNW" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="20fc144e-0d4d-4a08-b70e-152f07c3d8c4" source="IT_FHNW" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ebe299a9-083f-48fe-8c7d-907ea93db6eb" source="IT_FHNW" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e57d9900-3868-4d22-a6b9-217a450f80f2" source="fhnw_i4ds" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0aee2219-32c5-436f-aef4-09049d74ad63" source="fhnw_i4ds" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a6f6601d-433a-46f2-a612-06fab26fd58a" source="fhnw_i4ds" target="run_sascha">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="42d16bde-331f-4c17-8ceb-ba6401fbd9da" source="fhnw_i4ds" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c9ca61f2-0531-4cb6-9c0e-44b425108094" source="fhnw_i4ds" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8f7fa3a8-7302-4768-bfd6-bd4add21f769" source="fhnw_i4ds" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="342f9a91-8018-4daf-9152-52002c9b532a" source="fhnw_i4ds" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="70397940-2d34-4c6f-9f06-359a79bfb448" source="fhnw_i4ds" target="fabiankuenzli">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fbdaba3b-7254-4fd5-b010-7aca65693c52" source="fhnw_i4ds" target="siltendo">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="17e315d0-e98c-43c5-b260-d468da2b0074" source="fhnw_i4ds" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e677d9eb-e92b-46ad-a76a-4af54f65bed8" source="fhnw_i4ds" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8e7c69f2-f9c4-4762-a726-65fbac3c9990" source="fhnw_i4ds" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="838f5777-99cf-41dc-b1f5-b7fe16a6abcf" source="fhnw_i4ds" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="49106aaf-534b-4e9d-92fe-92ff954c3da9" source="fhnw_i4ds" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="558eba92-02be-4b40-b2fd-1c682e2c7ddb" source="fhnw_i4ds" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e1a55f40-efdb-403d-b6b4-20ab4e4f95fa" source="fhnw_i4ds" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4ecb398c-06a0-4c71-9d7b-e14a067a780e" source="fhnw_i4ds" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1f4182a6-7bdd-4c75-95bc-86f2d500b8c5" source="fhnw_i4ds" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6a238a12-4cca-49db-8a2a-a183f149de40" source="fhnw_i4ds" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4db0c484-8637-4ed7-88f7-92fc3bf219e4" source="fhnw_i4ds" target="manfredvogel">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b66759b5-2c37-4ef9-9161-777cf5ecceab" source="fhnw_i4ds" target="ki_blog">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8fbf8688-e366-4591-a75b-a98ed4017514" source="fhnw_i4ds" target="swisseagle71">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="02dcaf5c-8c05-440e-bc58-ecd71a375fe9" source="fhnw_i4ds" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="db87665d-9137-4b08-9bd9-48eea871e272" source="fhnw_i4ds" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="10dc261c-9bdc-4be8-83a1-0d7595643566" source="fhnw_i4ds" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7a7d2cbc-dc9a-4e39-a958-9871f718d45b" source="fhnw_i4ds" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c50512a2-5bb5-4b6a-8512-f2994215174d" source="fhnw_i4ds" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="58236f9f-562b-4af9-a0af-f700e3db9174" source="fhnw_i4ds" target="dotFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4c0093a6-1daf-4e16-a3d3-94a7f8031362" source="iwifhnw" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dc46c2a3-d097-4410-bd2e-80a37a8d8b2c" source="iwifhnw" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d3566040-083a-4669-a642-068dfa381c73" source="iwifhnw" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fe371300-88d0-4379-8330-3e048fa25901" source="iwifhnw" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0d5c3344-bb44-4a8c-b083-0f1889933fcc" source="iwifhnw" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="39ba2897-f839-4949-99d1-94ba632d569f" source="iwifhnw" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="cfa91a2f-097a-446b-9357-bd235ffd116c" source="iwifhnw" target="gameculture_ch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4ecd75df-6632-4fc9-a8ee-cae3f686ab4c" source="iwifhnw" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4267889c-3aa9-4a4c-ad99-26be2e320aeb" source="iwifhnw" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f03b01be-59d6-4a0f-b8f0-d957157164b8" source="iwifhnw" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ba1b198a-da4c-409f-8266-9d05f84124f0" source="iwifhnw" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d5dee0d3-68f0-4ea9-9a8c-3032485aae28" source="iwifhnw" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ea3e031b-517c-496b-adda-d4c5c2cdc0e9" source="iwifhnw" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="80c2fbd3-5f49-4410-b6d0-5684aea4b663" source="iwifhnw" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f5fd32a4-0f41-431e-b54b-56e5eedf5e52" source="iwifhnw" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a3af6353-14db-4f7b-814b-cf8e05215a52" source="FHNWTechnik" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8f842f95-50e4-42dd-816d-2322bcc5ba5a" source="FHNWTechnik" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="27ac0988-2573-4b2e-adf8-f1947c23c227" source="FHNWTechnik" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dd64d5a3-e21a-40df-8ca7-d6914180bb01" source="FHNWTechnik" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2cc36bfb-3136-4d22-abad-b2f23822da05" source="FHNWTechnik" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f655dbed-4737-46c3-bda0-bb65ba11252b" source="FHNWTechnik" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ea9a32a1-d1e9-4dfb-968b-6fe83a82d664" source="FHNWTechnik" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="af1cb7ee-3017-424a-b25c-3a5878a811f5" source="FHNWTechnik" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="66c48f39-494c-4134-918d-e4980c6d14c3" source="FHNWTechnik" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7617a121-392c-452e-9953-f03f7ccb2bfc" source="FHNWTechnik" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8e0a1d53-2a45-4220-a6ae-5a5a92a5803b" source="FHNWTechnik" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9c6b0594-1f7f-4b5e-bb37-234135c8ea82" source="FHNWTechnik" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="03b7c616-cb65-4501-97d6-3030ec38e723" source="FHNWTechnik" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="307bc212-f16b-45f3-bc1f-a5d7e5ea47e9" source="FHNWTechnik" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="cb6bb9f7-a113-49df-8002-5f735d57ad87" source="FHNWTechnik" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="73acdf0d-b720-4e68-bd2f-7a616d7ce678" source="FHNWTechnik" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d97e3529-b2ee-42f3-abc3-d164c3897142" source="FHNWTechnik" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="33b822df-e541-4b1b-a975-1408c67bc146" source="FHNWTechnik" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5010d31a-9fb2-4686-83fb-157682f72c45" source="FHNWTechnik" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fe9c12c5-00e1-4258-b43c-99b8c7c54c73" source="catkinEU" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="49a2d8bf-e311-414c-a9c5-f5943375ec15" source="catkinEU" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="aadaccb7-c6d0-44f3-b08b-a6454b606774" source="catkinEU" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="00339e17-23ef-41b0-b003-39bedfe5ac0b" source="laszloetesi" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="afd03f1a-71bd-4421-a13a-77ead8f0cdb5" source="laszloetesi" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="145f7188-1065-46ed-abd8-2c20a63fac41" source="laszloetesi" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e086efb4-a7c4-4a52-b760-405cb51d55a0" source="laszloetesi" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="03abb32f-dd78-4cc8-a9d8-cd88fb681b62" source="laszloetesi" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ea0d1761-79fb-4537-8f81-98f8185d7c66" source="laszloetesi" target="manfredvogel">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c05e7316-fcea-4f77-9f06-c2b64e35e137" source="laszloetesi" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="454c5e55-e404-4d71-b190-5a23c4bad865" source="laszloetesi" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0e73a4e8-268f-4607-bb62-d65f726b9733" source="laszloetesi" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d2081d3e-49dd-4107-9963-b5b35457018b" source="raumschiff_org" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="23e47d73-29cd-46e1-862f-01b12d365fee" source="raumschiff_org" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="aae5df71-2a71-4cd9-ab13-07ae244160e0" source="raumschiff_org" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2f9bb851-a7b5-433d-9dd5-7bc7b2ddeb0d" source="raumschiff_org" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="546b8ab1-e822-491e-9fea-62c940521efb" source="raumschiff_org" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1d070afb-c2f2-4e41-a577-cbe7086cc0ec" source="raumschiff_org" target="swisseagle71">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9e016aa3-ebda-45e9-a123-1379c3806961" source="raumschiff_org" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d288cfc4-1f49-461b-82fa-5ae23af46461" source="raumschiff_org" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ef6251be-7134-4476-9786-8d8b7769cce5" source="run_sascha" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ea48e41e-c517-4523-a8e3-a085414c4686" source="run_sascha" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7af727d8-322c-4de5-ac2a-7aa6985e4d3d" source="run_sascha" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2f40195d-5fd0-49e1-af9e-d5e9f8db9a03" source="run_sascha" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3281c40f-5a41-48c7-9af1-3189dfcba6ea" source="run_sascha" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="461f7bbc-5288-494d-ba4f-cfc6903c4ecf" source="run_sascha" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fbf9a4b5-d1ad-4c9a-b719-b7c292b2dbcd" source="run_sascha" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="cb302fe3-2db1-440d-a747-9b6d71f0052a" source="run_sascha" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="94b9f71e-0787-4e1c-b1b2-3642f1613b27" source="run_sascha" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0f6077a5-3e38-4a42-948e-1a520d8e3910" source="run_sascha" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1a54cf2b-3fc4-46f6-a3b1-3ae28daf7b90" source="run_sascha" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="441f3428-4849-4d34-8f0e-10946b152d6d" source="run_sascha" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4c4124cf-c089-4041-94d1-488ecd6f631a" source="run_sascha" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a29dbae5-5722-45c2-aea0-7de17dee0146" source="MorpheusCup" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="59249792-2979-4cbb-9ded-ba3b58863588" source="MorpheusCup" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5cff272b-7536-4726-af2e-c099c672a81f" source="MorpheusCup" target="siltendo">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="18749e2e-3eb4-4e1d-93c9-cfcaa82743ea" source="MorpheusCup" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="79c4fec1-2ab7-4e64-ac3f-37fa14c6e668" source="MorpheusCup" target="swisseagle71">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="61224320-98c6-470a-ab84-9b508187e754" source="MorpheusCup" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="53a43001-8b5f-4957-8482-c643e29705d4" source="MorpheusCup" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c6c6d16d-f31f-41bb-8c79-07d4539b2fc3" source="Infoethik" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0025fe44-2e23-40d3-b6ea-2ea643237468" source="Infoethik" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="77d5398c-2c6f-439a-8950-2dd45fd26e4f" source="Infoethik" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0bf574db-7bb1-4ffb-817f-e9981687215f" source="Infoethik" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="19b6bebb-399f-4963-b0b7-6851015ac347" source="Infoethik" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a7c95d0d-d354-4b39-b374-539578bfff13" source="Infoethik" target="ki_blog">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d202069b-2bbc-4109-bbc2-e892f15fd427" source="Infoethik" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6167267e-17d4-4b77-bbe9-7ce4c970d907" source="Infoethik" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="91c4b25a-3344-4059-a002-7484d2e0d3bd" source="Infoethik" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="95c789ac-a500-4d0a-9ca2-2acfd10a5407" source="ProjektNeptun" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="27c2f5a6-530b-4d71-8737-dc6e2f644f9e" source="ProjektNeptun" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7d1b7de7-b54b-446c-a18f-1b243b97c554" source="ProjektNeptun" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4970be2b-1c94-4a27-b7c4-522d6979a21e" source="ProjektNeptun" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fd613be5-46dc-4d84-b75d-301dbc56fbb1" source="ProjektNeptun" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="557a35c5-fb3b-4cea-88f8-b677785694ee" source="ProjektNeptun" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e9da7035-9d9a-4188-9487-e0ce3935a972" source="ProjektNeptun" target="gameculture_ch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9427cc63-22ab-436a-bc31-104984cea880" source="ProjektNeptun" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="414780ce-b6c4-41d8-a15b-dc4fee38d762" source="ProjektNeptun" target="schultze_info">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a364fbfa-2c67-4f6f-ae6c-9af0a2a173c5" source="ProjektNeptun" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dc55a17d-9cbd-4567-baeb-493d7c58d3e8" source="ProjektNeptun" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1458379a-6351-4e27-bc99-ac883632af74" source="ProjektNeptun" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="10e80785-214e-4f8e-8158-08ec6825563a" source="ProjektNeptun" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="085c3f73-2a98-45ee-842b-0725c801fc8a" source="ProjektNeptun" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0f24af93-1e09-4f91-a3c4-0d5f68fe5b9b" source="ProjektNeptun" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b95066af-b30f-4c73-b438-50ed1299caae" source="ProjektNeptun" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c4cfb4d8-21c4-446c-a21b-cc44678d079e" source="ProjektNeptun" target="dotFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fdbef7b6-9386-4c1e-bf91-688cc0b4365e" source="extendance" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d0694923-bd7d-4a24-abf5-35733118f236" source="extendance" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5ce601ea-1fbc-4a0f-a517-04222d3f2472" source="extendance" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1c4e08ef-0027-4884-9f65-2001a8b0ccd6" source="extendance" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2cd33418-59a0-48a7-b42d-f8b72d4af81b" source="extendance" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="65e4909a-ce12-4128-8498-b6f0ec189d2c" source="extendance" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1e860e0e-c87b-4fed-a0fc-8b83793df86a" source="extendance" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="666da8af-c885-407b-ad82-1ff84b5707a7" source="extendance" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b31b32ed-51f3-4363-8afd-e9c0c70259c4" source="extendance" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9c903cfe-4613-41e2-b668-9ac7188458e4" source="extendance" target="schultze_info">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fc0d68fd-66d5-4829-b038-2371a17ecab9" source="extendance" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e93c6bea-0062-4745-be1b-e1d73a45d9a1" source="extendance" target="bttrsnck">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4b00a5bb-4dca-45d5-950d-38d64caf5b56" source="extendance" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ce04c7a5-a7ba-4329-80ad-74faf05449dd" source="extendance" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a583181c-d34a-4cf4-a0ef-89ffbba986f5" source="extendance" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b3cc7d55-4dcd-4c72-a5a2-107c2f5aee0f" source="extendance" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="367484ad-46d3-4b01-ae82-7c3dd37f7bfa" source="extendance" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="47e811ba-77e3-4768-9fdb-634e01f41770" source="SwissEdSocial" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e2beb924-fb64-4778-8d91-ea8b13e6f4eb" source="SwissEdSocial" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="41f463cf-708a-4b8e-a518-ebaf86caa59b" source="SwissEdSocial" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="03249a74-4c14-4557-8745-253d30620fda" source="SwissEdSocial" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c7b87da5-352f-4e8e-8beb-fb08382ccc12" source="SwissEdSocial" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8312cf44-fd14-4d5a-be7e-a7074893461d" source="SwissEdSocial" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="79fb548b-6f0e-4faf-81bf-95151f9f6df5" source="SwissEdSocial" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8d4e3260-e811-49ea-808c-b67e8e47242a" source="SwissEuresearch" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e28a0557-aa60-4d4e-aaa7-80d5b3e73538" source="SwissEuresearch" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b6035a8b-9786-4dd4-89e3-8a18cf3975f0" source="SwissEuresearch" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6e476857-c80d-499d-b136-b5463492555c" source="SwissEuresearch" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4d26dccf-d054-4d7a-8390-f00c9e595b54" source="SwissEuresearch" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="32562f76-18a3-479e-bb29-82f5367699ff" source="SwissEuresearch" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d1dd1158-fc52-4ae6-988c-ac20eb5a950c" source="SwissEuresearch" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dbc184a4-61f1-407d-a059-1667263d2ec7" source="SwissEuresearch" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="230614c9-70e9-436a-8a22-7a91536ea83f" source="fabiankuenzli" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8a1b1025-e092-4ae7-afe3-0031a096b459" source="fabiankuenzli" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a1980095-e459-4871-aa56-f26bba5c6f7c" source="fabiankuenzli" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b28e36b1-5cf8-4178-aa26-b651084f7ae0" source="fabiankuenzli" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="690a7c3a-328a-41f9-b295-144fbd0393e3" source="siltendo" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="466f3363-a5dd-4c64-b4a0-425d75d7ae28" source="siltendo" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0598e158-e278-4f13-9990-1928fcec4afa" source="siltendo" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="74ec85cb-6931-4695-b532-dbf4bdaba85f" source="siltendo" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1f7df935-38df-4f57-87ac-47c35f309c92" source="siltendo" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="79c083b2-6847-42dd-a073-840efe404204" source="siltendo" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d64228cd-5e3f-48fc-b451-b415c9b49ba2" source="STV_Engineering" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2f5ca63e-e477-45f8-9755-70f6b0123f45" source="STV_Engineering" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="041e4f2e-a273-4875-a973-191112ebd2f4" source="STV_Engineering" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ec3ebdf3-53aa-4ae9-8c00-19c1f41d399c" source="STV_Engineering" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="385cb176-b853-4864-a8bf-51e65603eedd" source="STV_Engineering" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="038ad56e-8c98-45c3-8315-1f3976d90917" source="STV_Engineering" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="501616ef-e6b7-4db3-8918-4c8665bfd565" source="SchneiderElecDE" target="catkinEU">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4b711ab9-c026-45e0-a8aa-924006b406c1" source="SchneiderElecDE" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e6422432-1512-44d4-a82a-4f13f9076c01" source="SchneiderElecDE" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fe54e741-1fa4-4cfd-bebc-eac2d9f5fabc" source="theklamueller" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b418b374-a5e1-40e6-81f9-7d497b0ed3f4" source="theklamueller" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="91bb5020-704e-45a3-865e-3ba06b24830a" source="theklamueller" target="run_sascha">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0e9bd7bb-4639-46bb-ba7a-358cfac451fa" source="theklamueller" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f6ea9cf2-08ab-428f-bfd3-e60196c71ef0" source="theklamueller" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d265fb27-2862-49c8-b39d-52d8fcc8a491" source="theklamueller" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0a16002c-27dd-4301-89d8-e4a8c39838c8" source="theklamueller" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="377054ef-f4f3-475e-8f8b-bed1d7a4f330" source="theklamueller" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a4cf0253-9c20-486f-aac2-581b4a1f415c" source="theklamueller" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e5a25ffa-a065-4442-8a03-7d05f9fcd4f1" source="theklamueller" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="88a6c6b5-0bd4-405b-9447-0c46bfab13e8" source="theklamueller" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="849768c0-aac6-42e5-90e2-8fb8f7bd04b5" source="theklamueller" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0fd250f7-0203-4ffe-ba47-09a5b66f3775" source="theklamueller" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e8d6d485-fdd4-46e6-80f4-47e82bc9bb63" source="theklamueller" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9fe9caa2-144a-4213-818d-9e8f2e93325e" source="theklamueller" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e9d5b6ff-5042-4946-ace5-7589e8d374a7" source="theklamueller" target="manfredvogel">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="94765837-2ab0-4249-90ce-383d0fac0504" source="theklamueller" target="bttrsnck">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a47db2e2-95f2-453c-a542-d0376a8b7f5b" source="theklamueller" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1629e124-0d19-4347-a0f6-6694b396aeda" source="theklamueller" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9c647ed6-b856-4d39-aef5-93fcd807754e" source="theklamueller" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0965f179-0e89-4e32-a1bd-9ccd4ad302f6" source="theklamueller" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bce75a8f-eed6-4b48-bc76-f2f190811d4b" source="theklamueller" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="25279dfa-7bfd-46c4-b839-ff9b2f2b4bd5" source="theklamueller" target="dotFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="016105c0-7a3b-4b78-a7f2-98447bc83d64" source="IT_Connection" target="catkinEU">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a4c7ffa3-d999-4c20-b501-f7ca368700ef" source="IT_Connection" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e4131908-6001-402d-bea5-dcf8cfd20da3" source="IT_Connection" target="SchneiderElecDE">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="45504de3-e3d7-4045-852b-cb2519bd5c0a" source="IT_Connection" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1835c8bb-9333-4311-9798-1dfe453ec5c8" source="IT_Connection" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f07afe42-706d-4b31-aa87-b4c5ef730642" source="IT_Connection" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="645b4ac9-d06b-47ef-b700-46666362594d" source="IT_Connection" target="schultze_info">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8e1184f9-132e-432a-a0cd-4154c2ed8395" source="IT_Connection" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="24e4bf4b-9c0d-4502-8739-35d31c6a4806" source="nydesan" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="326f7c2c-f86d-4d69-a056-d6c6d7e72cc5" source="nydesan" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="da7add99-b360-4efe-b8d3-99f2382bc73d" source="nydesan" target="run_sascha">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="940cbcfb-e68f-4d10-a9ef-1021d5fb8db9" source="nydesan" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dcdec3eb-413d-4b99-b087-8286d5f6fa0c" source="nydesan" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4fdcf970-dd63-445a-8308-ae3607e2d4f9" source="nydesan" target="fabiankuenzli">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6b9ad1a4-1ac1-4666-8a6d-9270e4d5c6db" source="nydesan" target="siltendo">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bc1e85d5-4188-4107-b146-077cfc492207" source="nydesan" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3fc108e3-76f8-4ab4-8fa9-600d7462800c" source="nydesan" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5db43845-2651-4ace-8802-570b22bcca38" source="nydesan" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ebdb46aa-bbe9-4fed-a4ee-1d608a905a23" source="nydesan" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5ed11f5a-8600-4d8f-b730-cfea3a9c492a" source="nydesan" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bf37f632-7036-4dd5-962c-7c1863ed539a" source="nydesan" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="19f32483-b5f0-45a3-a005-e2dfe9e909e7" source="nydesan" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5fe1ed02-2207-4cd7-9a8c-071cabb20a9f" source="nydesan" target="ki_blog">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="380a4268-3113-49bd-a233-8fa003f69f8f" source="nydesan" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2a6c63e7-9060-4cea-b0d4-ee0346c65780" source="nydesan" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d7dafcfb-1e07-4d75-a402-084e470a29ea" source="nydesan" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9b74adb7-536a-4ef0-aab7-06eee66f204e" source="nydesan" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="34ea4ccc-5b91-4c6f-8a0f-7adfab1245fd" source="nydesan" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1675875b-1ebc-4a88-8753-235877a8aa20" source="budimanjob" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d8ed09c2-08ee-43b0-a01f-37dbe118b3dc" source="budimanjob" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c73782fb-30ce-4d2a-a6b4-06ca6b334f18" source="budimanjob" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bcb053a3-283c-41ef-ad8d-a73ba30cb61e" source="budimanjob" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7de14293-ef01-440f-9489-66c2c6aea641" source="budimanjob" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="32946c7c-8834-47ec-aa40-3175319ff621" source="budimanjob" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3f6ffb98-7644-46ad-a7f4-cd2ed798e120" source="budimanjob" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ee9f06b1-71c2-4a2f-9669-fbdd38f3f0ce" source="budimanjob" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9241846d-773d-4ecc-98b6-42bb466f683c" source="budimanjob" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="260a65f4-4475-4e0a-a1eb-a1b225846b82" source="budimanjob" target="manfredvogel">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ea88486b-aa23-46af-bcbc-6e46448ddffa" source="budimanjob" target="bttrsnck">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6c18f71f-ad8d-4fba-af0b-ab279aba2577" source="budimanjob" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0710afe4-4d70-45e6-b535-c382175c1ad5" source="budimanjob" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0eff2282-8711-44cc-8795-39bec88a8019" source="budimanjob" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7ef17ca8-1cb0-418a-918b-f192a94f5063" source="budimanjob" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="22dc2d61-de5d-491e-ae09-aa47f6a1cca4" source="budimanjob" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="53963831-5a30-479e-b60f-b2536d9ef991" source="mdallavecchia" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e6e73ad1-fee6-45bf-bab6-096e5493e40f" source="mdallavecchia" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="68d00fc8-a24b-4d23-8fea-35cead69c3a9" source="mdallavecchia" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b9ad1e07-b67c-4d57-a286-af14c9f4ed5f" source="mdallavecchia" target="siltendo">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="734b8df1-d053-4fb9-be1d-1f9bea7c6a7b" source="mdallavecchia" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d73117d6-ddfa-452c-84b1-6cc7d25bf5a5" source="mdallavecchia" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="920e2608-d5c9-41af-849a-ccd82037ae50" source="mdallavecchia" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="12ce1788-6ffa-43ca-8874-a2f51e2b7e48" source="mdallavecchia" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="22f2c7e0-e059-4a85-aa56-4a0fb84ccf1f" source="mdallavecchia" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="4ced9bc7-1256-456a-8267-7749438a870c" source="mdallavecchia" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6219375d-ae6a-492d-8b70-52751dd18340" source="mdallavecchia" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dedac082-5cc1-4689-a491-f5d8ddaf69e4" source="mdallavecchia" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b79ccf05-cc70-49f2-a053-6b30ae4a7cea" source="mdallavecchia" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5e96fe15-6c13-4018-9aba-fa6cf55bde48" source="mdallavecchia" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="62f2ff67-6fdb-4894-84e2-d7b3ed6efc6c" source="gameculture_ch" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="237ce412-be7e-43fb-b3b1-60ba206dbaaa" source="gameculture_ch" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d116f782-1eba-4e46-8e0d-8b4d6c160cc3" source="gameculture_ch" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e547248d-5cee-4b9a-bb95-0bd4b2f7a323" source="fhnw_io" target="run_sascha">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="7e0b8e9f-5095-4252-97a9-29cf0f1e6a4e" source="fhnw_io" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="002fec4c-e0de-4136-b423-59d03ee6feaf" source="fhnw_io" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="49b39033-ea27-435b-afb0-b9f9bca2716e" source="fhnw_io" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bf415f1e-f5a1-433c-bc21-c26e5923cdf1" source="fhnw_io" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d77e4f8b-bd1a-4b17-baa1-e3fb44aa1cd3" source="fhnw_io" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a2b8a9a0-8e9c-4d53-abe1-6b8d98d4b82f" source="fhnw_io" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="654aab57-8a6b-4db1-801f-e7e5389ebbc4" source="fhnw_io" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="344de718-64a0-451a-9050-cae060281bed" source="fhnw_io" target="manfredvogel">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="94d838fa-f296-446b-9d93-cbe9c7fb0847" source="fhnw_io" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="93c10345-c673-4ace-9638-d11dfcd98d6c" source="fhnw_io" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8e4637b3-b2bc-4f95-9fa8-3324f728484e" source="fhnw_io" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="846fce8f-ec32-4a72-ae4b-88556e7c2cf7" source="fhnw_io" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="746ea84f-92da-4460-9d5f-e867a50e0505" source="fhnw_io" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="64691ff7-abb5-4152-900c-e2b1619029d3" source="schultze_info" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="53bdd848-9433-4b98-bb04-eb8e7d43e356" source="schultze_info" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="858d300b-2848-4a35-aa2a-a8775a647856" source="schultze_info" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="83418720-84f5-4051-92be-d40ad8b032ce" source="schultze_info" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ab859cd5-df4e-44dc-9d37-6605878bffec" source="schultze_info" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="55273e5e-e299-45be-a208-39c694337fc5" source="schultze_info" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="70928094-9d05-4e1c-b61f-a011417da207" source="schultze_info" target="fabiankuenzli">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ebd3bcd3-a3c0-4052-9f46-ca9d62383985" source="schultze_info" target="siltendo">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="14bfc34f-5d7d-41ab-8cca-59a3e18077e3" source="schultze_info" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fb5da8ac-6fa9-40a0-a352-3ab644f990bc" source="schultze_info" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6738b8bb-459d-4813-8de3-4454038c590d" source="schultze_info" target="IT_Connection">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ca0b59ab-06c1-4f55-a1b4-ec31f7a1e636" source="schultze_info" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="fd01e8d7-7f97-45f4-ad9a-5a432dfc154a" source="schultze_info" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a2e9bc96-81f7-49ac-a5bd-781bbd5e7c14" source="schultze_info" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="43c4ea17-2273-408a-960c-b097a38a8b80" source="schultze_info" target="Frau_MINT">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="26f87cab-a5c3-401f-b050-1e3bb748d447" source="schultze_info" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="edde045d-86fd-479f-ba54-00d138625e45" source="schultze_info" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a7443031-0945-45e1-b8e6-06debb7e64b1" source="schultze_info" target="swisseagle71">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2cb7c8ae-e417-4ffb-9457-eac8bf19e6e3" source="schultze_info" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2ab2b6ce-dca5-4e8e-aa88-e8be3073465a" source="schultze_info" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="38cc329c-5f6e-4194-928f-8f2c85dae931" source="schultze_info" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b7019eff-0626-4b1f-b91e-09a766e5fc81" source="schultze_info" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="31f7e7a1-1592-4eb5-a1a2-8fa7b9c23701" source="schultze_info" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0626db95-0ba2-46dc-92e4-2d2443468d3d" source="schultze_info" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="80b460ec-c063-4ae1-bcea-4da7e3d25ef2" source="Frau_MINT" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d6561755-94c9-4701-8e4e-56d2f4ad1e61" source="Frau_MINT" target="STV_Engineering">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8dae2295-25d2-44e7-95f0-a595d9c10529" source="Frau_MINT" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9d9d0262-9cf7-4786-87c7-d341dc6ff77c" source="Frau_MINT" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2e299937-8609-4a39-8485-9a7b374e4a4a" source="Frau_MINT" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="5f877301-155e-45e6-ae34-91813e3050fb" source="Frau_MINT" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="874b1822-8c06-4b55-bf58-8adaaaa88746" source="Frau_MINT" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="40b31e18-041c-46a4-8ba4-1a169a28f7b5" source="Frau_MINT" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="86f2ce80-2e12-4759-b2e5-85d66b7964e7" source="Frau_MINT" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="59cd4e41-b460-4fcb-a61c-77a8ede202eb" source="Frau_MINT" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="af2b209a-a746-4d03-af9c-c912969bc581" source="FHNW" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="e39ae29c-1489-4217-bba1-1910322e368e" source="FHNW" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a13f7fc0-bb8b-4172-8c9f-227d1893889c" source="FHNW" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8931893a-b6e1-41f6-84af-fabaec3dbc5b" source="FHNW" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a9986575-7c63-460b-8001-e5ffe1da8988" source="FHNW" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="177c4bbf-8b49-4a84-9d2c-bad2436269ba" source="FHNW" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6ef5cde9-afd7-4baa-8bea-f44bb1edd70c" source="FHNW" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c38b7310-6e12-422b-baed-974bafc73104" source="FHNW" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="56133245-4556-42d2-add1-1bb4e30a0195" source="FHNW" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b291f600-60e4-48b4-bfa8-5a59e7a5349b" source="FHNW" target="dotFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b8ae6dc9-c7e5-430c-92a0-bd74b4654ff1" source="hsaFHNW" target="run_sascha">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="50663c36-c4b6-4a27-8be7-3e492729d72a" source="hsaFHNW" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="30399d49-7f00-4f52-8f9b-ea81ef8f20ed" source="hsaFHNW" target="ProjektNeptun">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="645dc5e9-f103-447d-9a7d-dff9e91fd845" source="hsaFHNW" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8fb10e8d-900d-44f7-85a5-f05dd1c9c4d1" source="hsaFHNW" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="82e2a0c9-b493-4580-88e7-ae4616c40a3d" source="hsaFHNW" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="0103f5ce-6f02-4e6f-929a-13ea16e827e9" source="hsaFHNW" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8800b8a2-fc27-4233-8d0b-c4dc9d539115" source="hsaFHNW" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="f2760028-6a70-44a4-ab18-51ebeef9f802" source="hsaFHNW" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="16fc679e-25bc-42dc-a090-34f5838e3d1f" source="hsaFHNW" target="Zukunftstag">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a8ab5ef6-23ff-4267-a874-5f530ab476d4" source="hsaFHNW" target="FHNWbusiness">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="58e68111-7506-4807-9f57-63889ed18b1f" source="hsaFHNW" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="501a9260-53bb-4039-9d61-67bb742d2735" source="hsaFHNW" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="b8d298a5-d177-4b9f-9c5d-01165721f443" source="hsaFHNW" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="dc7a56e5-9677-4d14-ad4c-37220ab8122b" source="manfredvogel" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="18f4a486-1292-4c06-8935-b33357ba76d9" source="manfredvogel" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c2e178dc-d1e3-4001-b421-cbf75a2f6852" source="manfredvogel" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="ffb58308-e2b0-4232-b97a-26cc69d3e4b8" source="manfredvogel" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2bb8072b-bc6a-4286-b7bf-035a7f7e2a8b" source="manfredvogel" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="546617d4-5c39-489d-a1e6-6a1f29975a8b" source="manfredvogel" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="271e0ce3-1d90-43ab-88ff-f2fc31813ac3" source="manfredvogel" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bb18d2b9-7eb1-4aae-9bf3-695ca7762984" source="bttrsnck" target="extendance">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="48a26e18-98ea-4453-b06c-dd40d7d9f2ef" source="bttrsnck" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="c79fc741-0083-453d-bcb4-d6126d321495" source="bttrsnck" target="budimanjob">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="da6f5877-7cc8-486b-bce4-fa672cc282fe" source="bttrsnck" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="534341b6-7176-48da-bffe-59879b38870c" source="bttrsnck" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9b35a7bc-eb97-464c-83ab-cb1272aef9b5" source="bttrsnck" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="04937784-5ede-4635-96be-ee2830582edf" source="bttrsnck" target="dotFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="6d139b76-a309-4ca7-bdf9-40e502a75901" source="ki_blog" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9320cad3-9035-4cf8-89ea-07281262a2e9" source="ki_blog" target="nydesan">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="357cddb7-b7b1-47d0-be5b-ffd15e528073" source="ki_blog" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9a64c00e-9148-492f-aa5d-dc5366ddf62e" source="swisseagle71" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="014865d1-e031-44b1-8c31-b49a423d8c85" source="swisseagle71" target="raumschiff_org">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="887ae881-0368-4ecc-846f-eef974c892b0" source="swisseagle71" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8ce48abe-7c0f-490e-9285-a8cec685a86b" source="swisseagle71" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="650c82eb-cd9c-4440-9d05-04f048fcdbf0" source="swisseagle71" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="307c67ad-fbe0-4ea4-8059-4314ed0e3266" source="swisseagle71" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="aaaec5a0-7a77-49aa-b13a-18a4fc80cdb8" source="swisseagle71" target="fhnw_i4ds">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="154fef58-57a9-4d3a-ab47-98feac32e062" source="swisseagle71" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1fef85a2-2ed9-4a14-8497-ce642618d082" source="Zukunftstag" target="laszloetesi">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="bf69d03c-f1bd-401a-980f-9bfac911ee35" source="Zukunftstag" target="SwissEuresearch">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="281c986b-2e6e-4f29-ad00-f8ab0bd93cc1" source="Zukunftstag" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="02f1d54a-56b8-4358-ac91-6e46e7ef29d2" source="Zukunftstag" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="cc626a34-32a7-413d-b1c5-816b674d4408" source="Zukunftstag" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="743c0f4e-2f9e-4b03-b61c-11200db2cda4" source="FHNWbusiness" target="Infoethik">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="9779cd09-774c-45d0-acbe-5dcbd91e8699" source="FHNWbusiness" target="SwissEdSocial">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="8651f758-4df5-49ac-bd3e-34d6edf4fb37" source="FHNWbusiness" target="theklamueller">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="2231bfcd-3f2e-431e-bcc2-3754169525a1" source="FHNWbusiness" target="mdallavecchia">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="27af357d-ebee-4dde-b777-dbde1915a4fd" source="FHNWbusiness" target="fhnw_io">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3fc1ba9b-271b-4177-a593-02f13c1fe17a" source="FHNWbusiness" target="FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="1d1d6c60-0c73-420c-86a1-d779e12be591" source="FHNWbusiness" target="hsaFHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="a2633fc7-8810-4a43-832c-c64389b94412" source="FHNWbusiness" target="IT_FHNW">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="d661ed99-1cc7-4593-bb01-d0d828d6904e" source="FHNWbusiness" target="iwifhnw">
+        <attvalues></attvalues>
+      </edge>
+      <edge id="3f6984d9-d791-4830-a27f-02ee269739b3" source="FHNWbusiness" target="FHNWTechnik">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
