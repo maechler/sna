@@ -11,6 +11,7 @@ public class NewsportalGraph {
     private Map<Long, TwitterUser> newsportals = new HashMap<>();
     private Map<Long, TwitterUser> humans = new HashMap<>();
     private Map<Long, Set<Long>> associations = new HashMap<>();
+    private static boolean onlyNewsportalFollowings = true;
 
     public void addNode(TwitterUser node) {
         if (node.getType().equals(TwitterUser.TYPE_HUMAN)) {
@@ -48,13 +49,24 @@ public class NewsportalGraph {
         NewsportalGraph graph = new NewsportalGraph();
         List<TwitterUser> users = db.findAllNodes();
         List<Pair<Long,Long>> edges = db.findAllEdges();
+        List<Long> newsportalIds = new ArrayList<>();
 
         for (TwitterUser user: users) {
             graph.addNode(user);
+
+            if (user.getType().equals(TwitterUser.TYPE_NEWSPORTAL)) {
+                newsportalIds.add(user.getId());
+            }
         }
 
         for (Pair<Long,Long> pair : edges) {
-            graph.addEdge(pair.getKey(), pair.getValue());
+            if (onlyNewsportalFollowings) {
+                if (newsportalIds.contains(pair.getValue())) {
+                    graph.addEdge(pair.getKey(), pair.getValue());
+                }
+            } else {
+                graph.addEdge(pair.getKey(), pair.getValue());
+            }
         }
 
         return graph;
